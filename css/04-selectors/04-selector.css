@@ -104,3 +104,24 @@ section + h4 + h5 {
 strong ~ h3 {
     background-color: cornflowerblue;
 }
+
+
+/*Assignment*/
+summary::first-letter {
+ color: blue;
+}
+
+details::first-line {
+ color: green;
+}
+
+details p::first-line {
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+p::first-line {
+    color: red;
+    text-transform: lowercase;
+}
+/**/
