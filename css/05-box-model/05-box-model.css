@@ -1,0 +1,19 @@
+div[class*="box"] {
+border: 5px outset rgb(129, 14, 14);
+height: 100px;
+width 200px;
+box-sizing: border-box;
+}
+
+
+div.box-1 {
+margin: 40px;
+}
+
+div.box-2 {
+    padding: 15px;
+}
+
+div.box-3 {
+    outline: 2px solid; red;
+}
