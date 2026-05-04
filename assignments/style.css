@@ -1,0 +1,39 @@
+.icons {
+    list-style-type: none;
+    display: flex;
+    padding: 20;
+    gap: 15px;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex flex-wrap: wrap;
+
+}
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        color: black;
+
+    }
+    .item img {
+    width: 18px;
+    height: 18px;
+    
+}
+
+.item img {
+    width: 18px;
+    height: 18px;
+
+}
+.item:hover {
+    color: blue;
+    
+}
