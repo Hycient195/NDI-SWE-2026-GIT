@@ -1,19 +1,106 @@
 .item-1 {
     color: red;
 }
+/* 
+element[attribute="value"] {
+    property: value
+}
+*/
 
 li[class="item-2"] {
     color: orange;
 }
 
+/* Matches element(s) with attribute whose value begins with the specified word */
 li[class^="line-"] {
     color: blue;
 }
 
-li[class$="box"]{
+/* Matches element(s) with attribute whose value ends with the specified word */
+li[class$="box"] {
     color: teal;
 }
 
+/* Matches element(s) with attribute whose value contains the specified word */
 li[class*="good"] {
     color: purple;
+}
+
+input {
+    color: red;
+}
+
+/* Pseudo-Class Selector */
+/* 
+
+element:pseudo-class {
+    property: value;
+} */
+
+input:focus {
+    outline: 1px solid red;
+}
+
+input:active {
+    background-color: yellow;
+}
+
+/* 
+
+element::pseudo-element {
+    property: value
+}
+ */
+
+input::placeholder {
+    color: cyan;
+}
+
+/* ::before and ::after pseudo elements */
+
+p.pseudo-paragraph::before {
+    content: "This is at the beginning";
+}
+
+p.pseudo-paragraph::after {
+    content: "This is at the ending";
+}
+
+div.box-element {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+div.box-element::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    display: block;
+    transform: translateX(10px) translateY(10px);
+}
+
+/* Descendant combinator marked by a space ( ) used to target elements by tracing them from their parent */
+section p {
+    height: 100px;
+    width: 200px;
+    background-color: brown;
+}
+
+/* Child combinator is marked by a greater-than sign (>) used to target elements that are direct children of a specified parent */
+div > h4 > span {
+    /* height: 100px;
+    width: 200px; */
+    background-color: pink;
+}
+
+/* Next Sibling combinator is marked by a plus sign (+) used to target elements that are immediately preceded by a specified element */
+section + h4 + h5 {
+    background-color: orangered;
+}
+
+/* Subsequent Sibling combinator is marked by a tilde sign (~) used to target elements that are preceded by a specified element in no direct order */
+strong ~ h3 {
+    background-color: cornflowerblue;
 }
