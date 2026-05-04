@@ -1,126 +1,131 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head> </head>
 
-    </head>
-    <body style="padding-bottom: 100px;">
-        <section>
-            <h2>Text Elements</h2>
-            <div>
-               <h3>Paragraph Tags</h3>
-                <p>A quick brown bird</p>
-                <p>Jumps over the lazy cat!</p>
-                <p>The London bridge is falling</p>
-            </div>
-            <div>
-                <h3>Heading Tags</h3>
+  <body style="padding-bottom: 100px">
+    <section>
+      <div>
+        <h2>Heading Tags</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+      <div>
+        <h3>Paragraph Tags</h3>
+        <p>A Quick brown bird</p>
+        <p>Jumps over the lazy dog</p>
+        <p>Jump over the lazy cat</p>
+      </div>
+    </section>
 
-                <h1>H1 Tag</h1>
-                <h2>H2 Tag</h2>
-                <h3>H3 Tag</h3>
-                <h4>H4 Tag</h4>
-                <h5>H5 Tag</h5>
-                <h6>H6 Tag</h6>
-            </div>
-            <hr>
-        </section>
+    <hr />
 
-        <br>
+    <section>
+      <h2>Lists</h2>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Item 2</li>
+        <li>Item 1</li>
+        <li>Item 3</li>
+      </ol>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <h3>Detailed List</h3>
+      <dl>
+        <dt>courses</dt>
+        <dd>Description of courses</dd>
+        <dd>More description of courses</dd>
+        <dt>Lectures</dt>
+        <dd>Description of Lectures</dd>
+        <dd>More description of Lectures</dd>
+      </dl>
+    </section>
 
-        <section>
-            <h2>Lists</h2>
+    <hr />
 
-            <h3>Ordered List</h3>
-            <ol>
-                <li>Pepper</li>
-                <li>Salt</li>
-                <li>Onions</li>
-            </ol>
+    <section>
+      <h2>inline semantic Tags</h2>
+      <strong>Awesome Stuff!</strong>
+      <p>I am a paragraph, this is a <mark>good course</mark></p>
+      <em>This is italic text</em>
+      <p><del>This is deleted text</del></p>
+      <p>i am walkin <em>down the street</em></p>
+      <mark>Highlighting text</mark>
+      <p>i acknowledge<del> that this is a good course</del></p>
+      <p><small>This is small text</small></p>
+      <sup>This is superscript text</sup>
+      <sub>This is subscript text</sub>
+      <p>The value is CO<sup>2</sup></p>
+      <p>The answer is 10<sup>2</sup></p>
+    </section>
 
-            <h3>Unordered List</h3>
-            <ul>
-                <li>Carpentry</li>
-                <li>Fishing</li>
-                <li>Plumbing</li>
-            </ul>
+    <br />
 
-            <h3>Description List</h3>
-            <dl>
-                <dt>Recreation</dt>
-                <dd>Activities done for leisure and fun</dd>
-                <dt>Hiking</dt>
-                <dd>Walking in nature, often on trails or paths</dd>
-                <dt>Swimming</dt>
-                <dd>Moving through water for exercise and recreation</dd>
-            </dl>
-            <hr>
-        </section>
+    <section>
+      <h2>Links and Media</h2>
+      <a href="02-semantic.html">Go to Semantic HTML</a><br />
+      <a href="https://www.google.com" target="_blank">Go to Google</a><br />
+      <a href="https://www.youtube.com" target="_blank">Visit YouTube</a><br />
+      <br />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_pkmyJbC-MQkZx9pas57fiGjzVIvyK5XDFAeM0y-GOp8QQF7GDXQoSE4gw0BVXw0XMY6MbkTJ24NGikBQoSey7oRKKKYAw2zEzNK5_DAMAA&s=10="
+        alt="car"
+      />
+      <p>This image was gotten from the internet.</p>
 
-        <br>
+      <hr />
+      <img src="offline.png" alt="offline" width="500px" height="100px" />
+      <p>This image was gotten from the file explorer.</p>
 
-        <section>
-            <h2>Inline Semantic Tags</h2>
-            <strong>I am Bold!</strong> <p>I am a regular text</p>
-            <em>Emphasis Tag</em>
-            <p>I was walking along the street when I saw a <em>purple embroided</em> leather jacket</p>
-            <mark>Mark Tag</mark>
-            <p>This is used to <mark>highlight</mark> a word within a paragraph</p>
-            <small>Small text</small>
-            <p>This is a <small>small text</small> in a paragraph</p>
-            <del>Deleted Text</del>
-            <p>I acknowledge that <del>Joan</del> is a wrong spelling of Joanne</p>
-            <ins>Inserted Text</ins>
-            <p>I acknowledge that <ins>Joanne</ins> is the correct spelling</p>
-            <sub>Sub Text</sub>
-            <p>The value is CO<sub>2</sub></p>
-            <sup>This is a super script</sup>
-            <p>The answer is 10<sup>2</sup></p>
-            <hr>
-        </section>
+      <audio>
+        <source src="audio.mp3" type="audio/mpeg" />
+      </audio>
 
-        <br>
+      <video controls>
+        <source
+          src="https://www.youtube.com/watch?v=cv5chGtfVTg"
+          type="video/mp4"
+        />
+      </video>
 
-        <section>
-            <h2>Links and Media</h2>
-            <p>An Anchor tag points your web page to a different webpage</p>
-            <a href="https://www.google.com/" target="_blank">Go to Google</a> <br>
-            <a href="02-semantic.html">Go To Semantic HTML</a><br>
-            <img alt="A Ship" width="350px" height="200px" src="https://media.cnn.com/api/v1/images/stellar/prod/disney-adventure-ship.jpg?q=w_1160,c_fill/f_webp" >
-            <img src="airplane.avif" alt="An airplane" width="350px" height="200px" >
-            <audio controls>
-                <source src="">
-            </audio>
-            <video controls muted autoplay>
-                <source src="https://www.youtube.com/watch?v=8UlLgOf20Ho&list=PL4JxLacgYgqTgS8qQPC17fM-NWMTr5GW6">
-            </video>
-            <iframe src="https://www.google.com/" width="600px" height="400px"></iframe>
-            <hr>
-        </section>
+      <iframe
+        src="https://www.youtube.com/embed/cv5chGtfVTg"
+        frameborder="0"
+      ></iframe>
+    </section>
 
-        <br>
+    <br />
 
-        <section>
-            <h2>Miscelaneous</h2>
+    <section>
+      <h2>Miscellaneous</h2>
+      <details>
+        <summary>Click to view</summary>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis animi,
+        quam hic debitis quibusdam, laborum deleniti nulla, dolorem amet fugit
+        cumque quasi voluptatum saepe asperiores dicta sequi adipisci laudantium
+        aliquid.
+      </details>
 
-            <h3>Details and Summary</h3>
-            <details>
-                <summary>Click this to see more</summary>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis quisquam deleniti libero modi consequuntur aliquid enim, hic nulla! Voluptas molestias consectetur, quidem deleniti ipsam quis quibusdam fuga eaque asperiores aliquam! Aperiam impedit nobis quidem animi, consequuntur libero itaque qui laudantium laborum, aut, tenetur at officiis unde ratione quas expedita?
-            </details>
+      <h3>Progress</h3>
+      <progress value="30" max="100"></progress>
 
-            <h3>Progress</h3>
-            <progress value="800" max="1000"></progress>
+      <h3>Meter</h3>
+      <meter value="0.6">60%</meter>
 
-            <h3>Meter</h3>
-            <meter value="0.6"></meter>
+      <h3>Pre tag (preformatted text)</h3>
+      <pre>
+let name = "Ebube";               //String
+const age = 30;                   // Number
+let isStudent = true;             // Boolean
+      </pre>
+    </section>
 
-            <h3>Pre Tag (Preformatted Text)</h3>
-            <pre>
-let name = "Alice";       // String
-const age = 25;           // Number
-let isStudent = true;     // Boolean
-            </pre>
-            
-        </section>
-    </body>
+    <hr />
+  </body>
 </html>

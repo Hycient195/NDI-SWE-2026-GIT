@@ -1,31 +1,31 @@
 #text-color {
-    color: violet;
+  color: violet;
 }
 
 #background-color {
-    background-color: cyan;
+  background-color: pink;
 }
 
 #color-name {
-    color: magenta;
+  color: magenta;
 }
 
 #rgb-value {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 #rgba-value {
-    background-color: grba(255,0,0,0.3);
+  color: rgba(255, 46, 54, 0.3);
 }
 
 #hsl-value {
-    color: hsl(240, 70%, 50%);
+  color: hsl(240, 70%, 50%);
 }
 
 #hex-value {
-    color: #f3498b;
+  color: rgb(43, 139, 62);
 }
 
 #color-wheel {
-    color: rgb(24, 130, 191);
+  color: rgb(59, 205, 202);
 }
