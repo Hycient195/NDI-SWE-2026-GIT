@@ -1,0 +1,19 @@
+.item-1 {
+    color: red;
+}
+
+li[class="item-2"] {
+    color: orange;
+}
+
+li[class^="line-"] {
+    color: blue;
+}
+
+li[class$="box"]{
+    color: teal;
+}
+
+li[class*="good"] {
+    color: purple;
+}
