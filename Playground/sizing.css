@@ -1,0 +1,32 @@
+section.min-section{
+    width: 80vw;
+    height: 80vh;
+    background-color: orange;
+    min-width: 300px;
+    min-height: 300px;
+
+}
+
+section.bg-img{
+    width: 300px;
+    height:200px;
+    background-color: black;
+    background-image: url(still-life-graphic-design-studio.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-repeat: ;
+}
+
+section.gradient-bg{
+    width: 300px;
+    height:200px;
+    border: 1px black;
+    background-image: linear-gradient(yellow,blue, red, green);
+}
+
+section.multiple-bg-img{
+    width: 300px;
+    height:400px;
+    border: 4px black;
+    background-image: url(still-life-graphic-design-studio.jpg),url(meee.jpg);
+    background-size:contain;
