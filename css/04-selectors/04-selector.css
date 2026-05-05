@@ -113,6 +113,7 @@ summary::first-letter {
 
 details::first-line {
  color: green;
+ font-size: larger;
 }
 
 details p::first-line {
@@ -124,4 +125,14 @@ p::first-line {
     color: red;
     text-transform: lowercase;
 }
-/**/
+
+details h4::after {
+    content:"it works";
+    background-color: yellowgreen;
+}
+
+ul li::marker{
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

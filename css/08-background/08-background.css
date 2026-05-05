@@ -1,0 +1,64 @@
+section.plain {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+section.bg-img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-image: url(./fish.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.gradient {
+    width: 450px;
+    height: 250px;
+    background-image: linear-gradient(0deg, 
+    blue, 
+    indigo, 
+    yellow, 
+    red,
+    cyan,
+    orange, 
+    gray,
+    orangered,
+    pink, 
+    green, 
+    lime);
+    border: 1px solid black;
+}
+
+section.radial-gradient {
+    background-image: radial-gradient(
+    cyan, 
+    blue 40%,
+    green 40%,
+    pink, 
+    yellow,
+    orange,
+    red
+    );
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    background-size: 10% 10%;
+}
+
+section.multi-bg {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    background-image: url(./image.jpg), url(./fish.jpg);
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+}
+
+section.bg-short-hand {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background: url(./image.jpg) no-repeat 10px 10px / contain;
+}
