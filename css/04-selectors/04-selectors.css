@@ -38,12 +38,13 @@ element:pseudo-class {
 } */
 
 input:focus {
-    outline: 1px solid red;
+    outline: 1px solid rgb(93, 15, 218);
 }
 
 input:active {
-    background-color: yellow;
+    background-color: rgb(226, 125, 31);
 }
+
 
 /* 
 
@@ -64,6 +65,10 @@ p.pseudo-paragraph::before {
 
 p.pseudo-paragraph::after {
     content: "This is at the ending";
+}
+
+.Days::marker{
+    color: rgb(216, 109, 15);
 }
 
 div.box-element {
