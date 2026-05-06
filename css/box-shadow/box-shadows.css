@@ -1,0 +1,70 @@
+p {
+    margin: 0
+}
+
+
+article {
+    max-width: 500px;
+    padding: 10px;
+    background-color: rgb(49, 184, 45);
+    background-image: linear-gradient(to bottom, transparent, rgb(0 0 0 / 25%));
+}
+
+.simple {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 70%);
+}
+
+.multiple {
+  box-shadow:
+    1px 1px 1px black,
+    2px 2px 1px black,
+    3px 3px 1px red,
+    4px 4px 1px red,
+    5px 5px 1px black,
+    6px 6px 1px black;
+}
+
+button {
+    width: 150px;
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #b12626, #12d312);
+
+    box-shadow: 1px 1px 1px black, 
+    inset 2px 3px 5px rgb(0 0 0 / 30%),
+    inset -2px -3px 5px rgb(255 255 255 / 50%);
+ 
+    
+}
+
+button:focus, button:hover {
+        background-image: linear-gradient(to bottom right, #888888, #eeeeee);
+    }
+
+button:active {
+  box-shadow:
+    inset 2px 2px 1px black,
+    inset 2px 3px 5px rgba(92, 12, 12, 0.3),
+    inset -2px -3px 5px rgb(255 255 255 / 50%);
+}
+
+img {
+    border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.grayscale {
+  filter: grayscale(50%);
+}
+
+
+

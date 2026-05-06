@@ -1,0 +1,48 @@
+main > h4.red-text {
+    color: red;
+}
+
+li.serif {
+    font-family: serif;
+}
+
+li.san-serif {
+    font-family: sans-serif;
+}
+
+li.monospace {
+    font-family: monospace;
+}
+
+li.cursive {
+    font-family: cursive;
+}
+
+li.fantasy {
+    font-family: fantasy;
+}
+
+h4.font-fallback {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+h4.device-specific {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h4.cdn-external-font {
+    font-family:  "Playwrite AR Guides";
+}
+
+
+@font-face {
+    font-family: "my custom font";
+    src: url(".\Edu_AU_VIC_WA_NT_Guides\EduAUVICWANTGuides-VariableFont_wght.ttf");
+}
+
+
+h4.local-external-font {
+    font-family: "my custom font";
+}
+

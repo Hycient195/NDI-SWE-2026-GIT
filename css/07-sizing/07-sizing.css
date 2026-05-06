@@ -19,7 +19,7 @@ section > div.box-1 {
 }
 
 section.min-section {
-    width: 50vw;
+    width: 100vw;
     height: 80vh;
     background-color: yellowgreen;
     min-width: 300px;
