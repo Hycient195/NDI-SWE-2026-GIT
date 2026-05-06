@@ -1,0 +1,29 @@
+.Serif{
+font-family: serif;
+}
+
+.San-Serif{
+    font-family: monospace;
+    text-decoration:overline wavy red;
+}
+
+.Cursive{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:overline dashed rgb(7, 160, 106);
+}
+
+
+
+@font-face {
+    font-family: "my custome font";
+    src: url(SupermercadoOne-Regular.ttf);
+}
+
+.External-font{
+font-family: "my custome font";
+color: blue;
+text-decoration:
+/* overline underline wavy red, */
+line-through dashed blue;
+writing-mode: sideways-rl;
+}
