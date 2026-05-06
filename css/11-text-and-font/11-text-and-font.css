@@ -1,5 +1,6 @@
 main > h4.red-text {
     color: red;
+    
 }
 
 li.serif {
@@ -182,8 +183,8 @@ section > p.text-shadow {
         fourth value is color
     */
     text-shadow:
-        2px 2px 0px violet,
-        4px 4px 0px teal;
+        5px 5px 0px violet,
+        2px 7px 0px teal;
 
 }
 
@@ -218,7 +219,7 @@ section > p.word-spacing {
 
 /* ======= Text Layout ========= */
 section > p.text-indent {
-    text-indent: 30px;
+    text-indent: 40px;
 }
 
 section > p.text-overflow {
