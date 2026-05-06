@@ -6,7 +6,7 @@ li.serif {
     font-family: serif;
 }
 
-li.san-serif {
+li.sans-serif {
     font-family: sans-serif;
 }
 
@@ -22,8 +22,9 @@ li.fantasy {
     font-family: fantasy;
 }
 
+/* Font Fallback */
 h4.font-fallback {
-    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
 }
 
 h4.device-specific {
@@ -31,18 +32,83 @@ h4.device-specific {
 }
 
 
+/* ====== Exernal Fonts ======== */
+
+/* Via a CDN (Content Delivery Network) Link */
 h4.cdn-external-font {
-    font-family:  "Playwrite AR Guides";
+    font-family: "Playwrite AR Guides";
 }
 
-
+/* Via a locally downloaded font file */
 @font-face {
-    font-family: "my custom font";
-    src: url(".\Edu_AU_VIC_WA_NT_Guides\EduAUVICWANTGuides-VariableFont_wght.ttf");
+    font-family: "My Custom Font";
+    src: url("./Playwrite_AR_Guides,Playwrite_DE_SAS/Playwrite_DE_SAS/PlaywriteDESAS-VariableFont_wght.ttf");
 }
-
 
 h4.local-external-font {
-    font-family: "my custom font";
+    font-family: "My Custom Font";
 }
 
+
+/* ======= Font Weights =========== */
+section.font-weights {
+    font-family: "My Custom Font";
+}
+section.font-weights > h4.fw-100 {
+    font-weight: 100;
+}
+section.font-weights > h4.fw-200 {
+    font-weight: 200;
+}
+section.font-weights > h4.fw-300 {
+    font-weight: 300;
+}
+section.font-weights > h4.fw-400 {
+    font-weight: 400;
+}
+section.font-weights > h4.fw-500 {
+    font-weight: 500;
+}
+section.font-weights > h4.fw-600 {
+    font-weight: 600;
+}
+section.font-weights > h4.fw-700 {
+    font-weight: 700;
+}
+section.font-weights > h4.fw-800 {
+    font-weight: 800;
+}
+section.font-weights > h4.fw-900 {
+    font-weight: 900;
+}
+
+
+/* ====== Font Size ========= */
+section.font-size > p.ten {
+    font-size: 10px
+}
+
+section.font-size > p.twenty {
+    font-size: 20px
+}
+
+section.font-size > p.thirty {
+    font-size: 30px
+}
+
+section.font-size > p.forty {
+    font-size: 40px
+}
+
+/* ======== LIne Height ========= */
+section.line-height > p.lh-ten {
+    line-height: 10px
+}
+
+section.line-height > p.lh-twenty {
+    line-height: 20px
+}
+
+section.line-height > p.lh-thirty {
+    line-height: 30px
+}
