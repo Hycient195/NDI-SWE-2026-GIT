@@ -12,7 +12,7 @@ section.bg-img {
     border: 1px solid black;
     background-image: url(./flying-fish.jpeg);
     background-repeat: no-repeat;
-    background-position: 10px 10px; /* has possible values of top, bottom, left, right and center */
+    background-position: 30px 30px; /* has possible values of top, bottom, left, right and center */
 }
 
 /* Gradient background */
@@ -22,7 +22,7 @@ section.linear-gradient {
     border: 1px solid black;
     background-image: linear-gradient(
         135deg, 
-        blue 40%, 
+        blue, 
         indigo, 
         red,
         orangered,

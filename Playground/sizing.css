@@ -11,7 +11,7 @@ section.bg-img{
     width: 300px;
     height:200px;
     background-color: black;
-    background-image: url(still-life-graphic-design-studio.jpg);
+    background-image: url(still-life-graphic-design-studio.jpg), ;
     background-size:cover;
     background-repeat:no-repeat;
     background-repeat: ;
@@ -21,12 +21,27 @@ section.gradient-bg{
     width: 300px;
     height:200px;
     border: 1px black;
-    background-image: linear-gradient(yellow,blue, red, green);
+    background-image: r(yellow,blue, red, green);
 }
 
 section.multiple-bg-img{
-    width: 300px;
-    height:400px;
+    width: 200px;
+    height:200px;
     border: 4px black;
-    background-image: url(still-life-graphic-design-studio.jpg),url(meee.jpg);
-    background-size:contain;
+    background-image: url(./still-life-graphic-design-studio.jpg), url(./meee.jpg);
+    background-size:contain, cover;
+    background-repeat: no-repeat, no-repeat;
+}
+
+section.my-overflow{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    overflow: scroll;
+}
+
+section.my-overflow-content{
+    width: 600px;
+    height: 600px;
+    background-color: blueviolet;
+}
