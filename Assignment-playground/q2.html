@@ -1,20 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./q2.css">
-    <title>Question 2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Custom Table Layout</title>
+
+    <link rel="stylesheet" href="q2.css">
 </head>
 <body>
-    <main>
-        <section>
-            <h3>Question 2</h3>
-            
-        </section>
-    </main>
+
+    <section class="layout-table" >
+    <table border="1" cellpadding="30">
+
+        <tr>
+            <!-- Column 1 -->
+            <td rowspan="8" class="box blue large">
+                Helium 1
+            </td>
+
+            <!-- Column 2 -->
+            <td rowspan="4" class="box blue medium">
+                Pentium 2
+            </td>
+
+            <!-- Column 3 -->
+            <td rowspan="2" class="box blue small">
+                Egy 3
+            </td>
+
+            <!-- Column 4 -->
+            <td class="box blue mini">
+                Gribi 4
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Eola 5
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="box pink small">
+                Marlin 6
+            </td>
+
+            <td class="box blue mini">
+                Raven 7
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Magi 8
+            </td>
+        </tr>
+
+
+        <tr>
+            <!-- Column 2 -->
+            <td rowspan="4" class="box pink medium">
+                Hira 9
+            </td>
+
+            <!-- Column 3 -->
+            <td rowspan="2" class="box blue small">
+                Rick 10
+            </td>
+
+            <td class="box blue mini">
+                Arslan 11
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Dona 12
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="box pink small">
+                Hona 13
+            </td>
+
+            <td class="box blue mini">
+                Henry 14
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Herta 15
+            </td>
+        </tr>
+
+        <tfoot>
+            <tr></tr>
+        </tfoot>
+
+    </table>
+    </section>
+
 </body>
 </html>

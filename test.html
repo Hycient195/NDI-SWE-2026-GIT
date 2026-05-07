@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Custom Table Layout</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    This is test
+
+    <table class="layout-table">
+
+        <tr>
+            <!-- Column 1 -->
+            <td rowspan="8" class="box blue large">
+                Helium
+            </td>
+
+            <!-- Column 2 -->
+            <td rowspan="4" class="box blue medium">
+                Pentium
+            </td>
+
+            <!-- Column 3 -->
+            <td rowspan="2" class="box blue small">
+                Egy
+            </td>
+
+            <!-- Column 4 -->
+            <td class="box blue mini">
+                Gribi
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Eola
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="box pink small">
+                Marlin
+            </td>
+
+            <td class="box blue mini">
+                Raven
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Magi
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Column 2 -->
+            <td rowspan="4" class="box pink medium">
+                Hira
+            </td>
+
+            <!-- Column 3 -->
+            <td rowspan="2" class="box blue small">
+                Rick
+            </td>
+
+            <td class="box blue mini">
+                Arslan
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Dona
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="box pink small">
+                Hona
+            </td>
+
+            <td class="box blue mini">
+                Henry
+            </td>
+        </tr>
+
+        <tr>
+            <td class="box pink mini">
+                Herta
+            </td>
+        </tr>
+
+    </table>
+
 </body>
 </html>
