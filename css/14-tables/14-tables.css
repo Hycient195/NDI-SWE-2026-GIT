@@ -6,6 +6,10 @@ section.simple-table {
         font-size: 14px;
         max-width: 1000px;
         width: 100%;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        margin-block-start: auto ;
+        margin-block-end: auto;
 
         /* Aligning all of the balance columns in one style block */
         td:nth-child(5), th:nth-child(5) {
@@ -89,6 +93,7 @@ section.nth-table {
             color: white;
             font-weight: 700;
             padding: 10px 10px;
+            caption-side: bottom;
         }
 
         thead {
@@ -110,17 +115,26 @@ section.nth-table {
                 }
             }
             
-            tr:nth-child(3n + 0) {
+            /* functional notation */
+            tr:nth-child(5n + 4) {
                 background-color: aquamarine;
             }
 
-            tr:nth-child(3n - 1) {
+            tr:nth-child(5n - 1) {
                 background-color: pink;
             }
 
-            tr:nth-child(3n + 1) {
-                background-color: orange;
+            tr:nth-child(5n + 1) {
+                background-color: blue;
             }
+
+            tr:nth-child(5n - 1) {
+                background-color: green;
+            }
+
+            
+
+          
 
             
         }

@@ -1,17 +1,9 @@
 section > a.visit-me {
-<<<<<<< HEAD
 
 }
 
 section > a.visit-me:visited {
     color: yellowgreen;
-=======
-    /* color: orangered; */
-}
-
-section > a.visit-me:visited {
-    color: yellowgreen
->>>>>>> cca7d8c48c4e301321fc7ac6902599849818a42b
 }
 
 section > a.active-link {
@@ -19,16 +11,11 @@ section > a.active-link {
     padding: 3px 8px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> cca7d8c48c4e301321fc7ac6902599849818a42b
 section > a.active-link:active {
     color: orange;
     border: 4px inset black;
 }
 
-<<<<<<< HEAD
 /* section > a.hovered-link:hover {
     color: rgb(34, 184, 34);
     background-color: aqua;
@@ -41,10 +28,4 @@ section {
     background-color: aqua;
     cursor: not-allowed;
     }
-=======
-section > a.hovered-link:hover {
-    color: khaki;
-    background-color: green;
-    cursor: not-allowed;
->>>>>>> cca7d8c48c4e301321fc7ac6902599849818a42b
 }
