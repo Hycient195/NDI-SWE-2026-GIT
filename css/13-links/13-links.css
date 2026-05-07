@@ -1,0 +1,18 @@
+section > a.visit-me {
+
+}
+
+section > a.visit-me:visited {
+    color: yellowgreen;
+}
+
+section > a.active-link:active {
+    color: orange;
+}
+
+section > a.hovered-link:hover {
+    color: rgb(34, 184, 34);
+    background-color: aqua;
+    cursor: not-allowed;
+}
+
