@@ -6,8 +6,14 @@ section > a.visit-me:visited {
     color: yellowgreen
 }
 
+section > a.active-link {
+    border: 4px outset black;
+    padding: 3px 8px;
+}
+
 section > a.active-link:active {
     color: orange;
+    border: 4px inset black;
 }
 
 section > a.hovered-link:hover {
