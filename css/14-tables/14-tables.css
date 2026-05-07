@@ -1,12 +1,16 @@
-section {
-
-    table.simple-table {
+section.simple-table {
+    table {
         border: 1px solid black;
         /* table-layout: fixed; */
         border-collapse: collapse;
         font-size: 14px;
         max-width: 1000px;
         width: 100%;
+
+        /* Aligning all of the balance columns in one style block */
+        td:nth-child(5), th:nth-child(5) {
+            text-align: right;
+        }
 
         & > caption {
             background-color: red;
@@ -23,9 +27,9 @@ section {
                     padding: 6px 8px;
                     text-align: left;
                 }
-                th:nth-child(5) {
+                /* th:nth-child(5) {
                     text-align: right;
-                }
+                } */
             }
         }
 
@@ -36,9 +40,9 @@ section {
                     padding: 6px 8px;
                 }
 
-                td:nth-child(5) {
+                /* td:nth-child(5) {
                     text-align: right;
-                }
+                } */
             }
             
 
@@ -57,8 +61,75 @@ section {
                     border-top: 1px solid gray;
                     padding: 4px 8px;
                 }
-                td:nth-child(5) {
+                /* td:nth-child(5) {
                     text-align: right;
+                } */
+            }
+            
+        }
+    }
+}
+
+section.nth-table {
+    table {
+        border: 1px solid black;
+        /* table-layout: fixed; */
+        border-collapse: collapse;
+        font-size: 14px;
+        max-width: 1000px;
+        width: 100%;
+
+        /* Aligning all of the balance columns in one style block */
+        td:nth-child(5), th:nth-child(5) {
+            text-align: right;
+        }
+
+        & > caption {
+            background-color: red;
+            color: white;
+            font-weight: 700;
+            padding: 10px 10px;
+        }
+
+        thead {
+            tr {
+                th {
+                    background-color: rgb(235, 152, 152);
+                    border-bottom: 1px solid black;
+                    padding: 6px 8px;
+                    text-align: left;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    border-top: 1px solid silver;
+                    padding: 6px 8px;
+                }
+            }
+            
+            tr:nth-child(3n + 0) {
+                background-color: aquamarine;
+            }
+
+            tr:nth-child(3n - 1) {
+                background-color: pink;
+            }
+
+            tr:nth-child(3n + 1) {
+                background-color: orange;
+            }
+
+            
+        }
+
+        tfoot {
+            tr {
+                td {
+                    border-top: 1px solid gray;
+                    padding: 4px 8px;
                 }
             }
             
