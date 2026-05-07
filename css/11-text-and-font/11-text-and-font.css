@@ -240,3 +240,22 @@ section > p.writing-mode {
 section > p.text-direction {
     direction: rtl;
 }
+
+section > .visited:visited{
+    color: rgb(211, 125, 21);
+    background-color: rgb(169, 203, 16);
+    font-weight: 800;
+}
+
+section > .Active:active{
+    color: rgb(13, 255, 0);
+}
+
+section > .Hover:hover{
+    color: blue;
+    background-color: rgb(169, 203, 16);
+}
+
+section >.Active:active{
+
+}
