@@ -1,0 +1,41 @@
+/* ========= List Style Type ========= */
+
+section ul.unordered-style-type {
+    list-style-type: circle;
+}
+
+section ol.ordered-style-type {
+    list-style-type: upper-latin;
+}
+
+/* ========= List Style Position ========= */
+section ul.unordered-style-position {
+    border: 1px solid black;
+    margin-left: 20px;
+    padding: 0;
+    list-style-position: outside; /* Prescribes where the numerical or bullet points like inside our ouside of the list item */
+    background-color: red;
+}
+
+/* ========= List Style Image ========= */
+section ul.unordered-style-image {
+    list-style-image: url("./small-pepper.png");
+}
+
+/* ========= Background Image ========= */
+section ul.list-background-image {
+    list-style-type: none;
+    padding-left: 0;
+    /* background-image: url("./small-pepper.png"); */
+    /* background-repeat: no-repeat; */
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+section ul.list-background-image > li {
+    background-image: url("./small-pepper.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: rgba(0, 255, 0, 0.5);
+    margin: 3px 0;
+    padding-left: 20px;
+}
