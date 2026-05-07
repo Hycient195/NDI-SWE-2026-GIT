@@ -242,20 +242,16 @@ section > p.text-direction {
 }
 
 section > .visited:visited{
-    color: rgb(211, 125, 21);
-    background-color: rgb(169, 203, 16);
+    color: rgb(15, 197, 91);
+    background-color: rgb(16, 16, 203);
     font-weight: 800;
 }
 
 section > .Active:active{
-    color: rgb(13, 255, 0);
+    color: rgb(16, 26, 219);
 }
 
-section > .Hover:hover{
+section > p.Hover:hover{
     color: blue;
-    background-color: rgb(169, 203, 16);
-}
-
-section >.Active:active{
-
+    background-color: rgb(123, 205, 15);
 }
