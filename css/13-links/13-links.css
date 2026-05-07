@@ -1,0 +1,17 @@
+section > a.visit-me {
+    /* color: orangered; */
+}
+
+section > a.visit-me:visited {
+    color: yellowgreen
+}
+
+section > a.active-link:active {
+    color: orange;
+}
+
+section > a.hovered-link:hover {
+    color: khaki;
+    background-color: green;
+    cursor: not-allowed;
+}
