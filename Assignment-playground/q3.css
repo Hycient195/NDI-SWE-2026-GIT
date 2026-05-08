@@ -78,7 +78,7 @@ section.simple-table {
         td {
           padding: 5px;
           text-align: left;
-          /* margin-right: 20px 20px 20px 10px; */
+          margin-right: 20px 20px 20px 10px;
           border-top: 1px solid rgb(95, 91, 91);
           
         }
