@@ -1,10 +1,16 @@
+body {
+    margin-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 section.simple-table {
   table {
     color: rgb(229, 198, 238);
     border-collapse: collapse;
-    font-size: 10px;
-    max-width: 800px;
+    font-size: 12px;
+    max-width: 1000px;
     width: 100%;
+
     margin-inline-start: auto;
     margin-inline-end: auto;
     margin-block-start: auto;
@@ -27,17 +33,21 @@ section.simple-table {
         th {
           font-size: 10px;
           text-transform: uppercase;
-          padding: 1rem;
-          text-align: left;
+          padding: 32px 8px;
+          text-align: left;        
         }
       }
+
     }
 
     tbody {
       tr {
         td {
-          padding: 15px;
+          padding: 20px;
+          text-align: left;
+          padding: 20px 15px;
         }
+        
 
         td:nth-child(4) {
           background-color: rgba(126, 93, 218, 0.932);
@@ -55,6 +65,3 @@ td:hover {
   background-image: linear-gradient(90deg, rgba(180, 114, 224, 0.932));
 }
 
-body {
-    margin-top: 70px;
-}
