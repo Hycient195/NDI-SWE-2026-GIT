@@ -1,0 +1,99 @@
+body {
+    margin-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section.simple-table {
+  table {
+    color: silver;
+    border-collapse: collapse;
+    font-size: 12px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-block-start: auto;
+    margin-block-end: auto;
+
+    margin: auto;
+    background-color: #1b2a42;
+
+
+
+
+
+    thead {
+
+      tr {
+        th {
+         /* background-color: rgb(51, 52, 71); */
+         /* border-top: 1px solid rgb(71, 54, 54); */
+        border-bottom: 1px solid gray;
+        padding: 16px 8px;
+        text-align: left;
+                    
+        }
+       
+      }
+
+      .create-btn {
+        background-color: rgb(231, 230, 230);
+        color: rgb(8, 8, 39);
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(224, 217, 217);
+        }
+      }
+
+
+    input {
+            padding: 6px 8px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            background-color: transparent;
+            color: white;
+
+            &:focus {
+                outline: none;
+                border-color: rgb(71, 54, 54);
+            }
+        }
+
+    
+
+        .head-tr {
+            background-color: rgba(10, 15, 78, 0.301);
+            border-top: 1px solid gray;
+        }
+  
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 20px;
+          text-align: left;
+          padding: 20px 15px;
+          border-top: 1px solid rgb(95, 91, 91);
+        }
+        
+      }
+    }
+
+        tfoot {
+            tr {
+                border-top: 1px solid rgb(95, 91, 91);
+                td { 
+                    padding: 16px 8px;
+                }
+            }
+            
+        }
+  }
+}
+
