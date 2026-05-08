@@ -1,42 +1,29 @@
 body {
-    margin-top: 70px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 section.simple-table {
   table {
     color: silver;
     border-collapse: collapse;
     font-size: 10px;
-    max-width: 800px;
+    max-width: 1400px;
     width: 100%;
     border-radius: 10px;
+    background-color: #1b2a42;
     margin-inline-start: auto;
     margin-inline-end: auto;
-    margin-block-start: auto;
-    margin-block-end: auto;
-
-    margin: auto;
-    background-color: #1b2a42;
-
-
-
-
 
     thead {
-
       tr {
         th {
-         /* background-color: rgb(51, 52, 71); */
-         /* border-top: 1px solid rgb(71, 54, 54); */
-        border-bottom: 1px solid gray;
-        padding: 16px 8px;
-        text-align: left;
-                    
+          border-bottom: 1px solid gray;
+          padding: 16px 8px;
+          text-align: left;
+          font-size: 15px;
+          font-weight: 400;
         }
-       
       }
-
       .create-btn {
         background-color: rgb(231, 230, 230);
         color: rgb(8, 8, 39);
@@ -44,57 +31,106 @@ section.simple-table {
         border: none;
         border-radius: 4px;
         cursor: pointer;
-
         &:hover {
           background-color: rgb(224, 217, 217);
         }
       }
+      .search-box {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        padding: 7px 10px;
+        border-radius: 10px;
+        background-color: #09152b;
+        border: 1px solid rgba(255, 255, 255, 0.08);
 
-
-    input {
-            padding: 6px 8px;
-            border: 1px solid gray;
-            border-radius: 4px;
-            background-color: transparent;
-            color: white;
-
-            &:focus {
-                outline: none;
-                border-color: rgb(71, 54, 54);
-            }
+        span {
+          color: #7f8aa3;
+          font-size: 20px;
         }
 
-    
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: white;
+          font-size: 14px;
 
-        .head-tr {
-            background-color: rgba(10, 15, 78, 0.301);
-            border-top: 1px solid gray;
-        }
-  
-    }
+          &::placeholder {
+            color: #7f8aa3;
 
-    tbody {
-      tr {
-        td {
-          padding: 5px;
-          text-align: left;
-          margin-right: 20px 20px 20px 10px;
-          border-top: 1px solid rgb(95, 91, 91);
-          
+          }
         }
-        
       }
     }
+    .head-tr {
+      background-color: rgba(10, 15, 78, 0.301);
+      border-top: 1px solid gray;
+    }
+  }
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.03);
+      }
 
-        tfoot {
-            tr {
-                border-top: 1px solid rgb(95, 91, 91);
-                td { 
-                    padding: 16px 8px;
-                }
-            }
-            
-        }
+      td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        color: #97a3bb;
+        font-size: 12px;
+      }
+
+      td:nth-child(1) {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  tfoot {
+    tr {
+      border-top: 1px solid rgb(95, 91, 91);
+      td {
+        padding: 16px 8px;
+      }
+    }
+  }
+}
+.action-btn {
+  background-color: #111b31;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  color: #dbe4f0;
+  padding: 8px;
+  width: 38px;
+  height: 38px;
+
+  &:hover {
+    background-color: #1a2744;
+  }
+
+  span {
+    font-size: 20px;
+  }
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #334264;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  color: white;
+  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  &:hover {
+    background-color: #1a2744;
   }
 }
 

@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./q3.css">
-    <title>Question 3</title>
-
+    <title>Question 3</title> <!-- Material Symbols (Recommended) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
+
 <body>
     <main>
-         <section class="simple-table">
-            <table cellpadding="15" >
-          <h1>Question 3</h1>
-
+        <h1>Question 3</h1>
+        <section class="simple-table">
+            <table cellpadding="15">
                 <thead>
-            <tr class="main-head-tr">
-              
-              <th>Access Profile <br> <small>config access profiles with trust policies for evaluated sessions.</small></th>
-            
-               <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-               
-              <th colspan="4">
-               <button class="create-btn">+ Create Access Profile</button> 
-                </th>
-            </tr>
+                    <tr class="main-head-tr">
+                        <th><span class="material-symbols-outlined"> deployed_code_account </span>Access Profile <br>
+                            <small>config access profiles with trust policies for evaluated sessions.</small></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th colspan="4"> <button class="create-btn">+ Create Access Profile</button> </th>
+                    </tr>
+                    <tr>
+                        <th>  <div class="search-box">
 
-            
-               <tr>
-                 <th>
-                  <input type="text" placeholder="Search" class="search">
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td> &lt; Pre  Next &gt;</td>
-                  </th>
-                    
-                </tr>
+              <span class="material-symbols-outlined">
+                search
+              </span>
+
+              <input
+                type="text"
+                placeholder="Search access profiles by name"
+              />
+
+            </div>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button class="action-btn"> <span class="material-symbols-outlined"> close </span></button>
+                            &nbsp; <button class="action-btn"> <span class="material-symbols-outlined"> rocket_launch
+                                </span></button> </td>
+                        </th>
+                    </tr>
                     <tr class="head-tr">
                         <th>Access profile</th>
                         <th>Description</th>
@@ -47,104 +54,160 @@
                         <th>Max session</th>
                         <th>Created</th>
                         <th>Actions</th>
-                   
-                  
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Ebube</td>
-                        <td>yes</td>
-                        <td>yes</td>
-                        <td>yes</td>
-                        <td>02/05/2026</td>
-                        <td>yes</td>
-                        
-                    </tr>
+          <td>Staff Workspace</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
+                   <tr>
+          <td>Student Workspace</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
                     <tr>
-                        <td>Mark</td>
-                        <td>No</td>
-                        <td>No</td>
-                        <td>No</td>
-                        <td>02/05/2026</td>
-                        <td>No</td>
-                        
-                    </tr>
+          <td>Parent Workspace</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
                     <tr>
-                        <td>Omar</td>
-                        <td>No</td>
-                        <td>No</td>
-                        <td>yes</td>
-                        <td>02/05/2026</td>
-                        <td>yes</td>
-                       
+          <td>Subject teacher</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
+                  
                     </tr>
-                    
+                   <tr>
+          <td>Form Teacher</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
+                 <tr>
+          <td>Academics</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
                     <tr>
-                         <td>Victor</td>
-                        <td>No</td>
-                        <td>No</td>
-                         <td>yes</td>
-                         <td>02/05/2026</td>
-                        <td>yes</td>
-                        
-                    </tr>
-                    <tr>
-                     <td>Ngozi</td>
-                        <td>No</td>
-                        <td>No</td>
-                         <td>yes</td>
-                         <td>02/05/2026</td>
-                        <td>yes</td>
-                       
-                    </tr>
-                    <tr>
-                          <td>John</td>
-                        <td>No</td>
-                        <td>No</td>
-                         <td>yes</td>
-                         <td>02/05/2026</td>
-                        <td>yes</td>
-                     
-                    </tr>
-                    <tr>
-                          <td>Emeka</td>
-                        <td>No</td>
-                        <td>No</td>
-                        <td>yes</td>
-                        <td>02/05/2026</td>
-                        <td>yes</td>
-                      
-                    </tr>
-                    <tr>
-                        <td>Ada</td>
-                        <td>No</td>
-                        <td>No</td>
-                        <td>yes</td>
-                        <td>02/05/2026</td>
-                        <td>yes</td>
-                        
-                    </tr>
-                    
+          <td>reports</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
+                   <tr>
+          <td>integrations</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
+                   <tr>
+          <td>HR</td>
+          <td>Self-service access for student users.</td>
+          <td>/system/access-profiles/platform.student</td>
+          <td>60m</td>
+          <td>4/8/2026</td>
+
+          <td>
+            <button class="action-btn">
+              <span class="material-symbols-outlined">
+                more_vert
+              </span>
+            </button>
+          </td>
+        </tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <td colspan="4">10 items</td>
-                        <td colspan="1">10</td>
-            
-                        <td> &lt; Pre  Next &gt;</td>
-                   
-                          
+                        <td colspan="1"><button class="prev-btn">10<span class="material-symbols-outlined"> close
+                                </span></button></td>
+                        <td><button class="prev-btn"><span class="material-symbols-outlined"> chevron_left
+                                </span>Prev</button> <button class="next-btn"> <span class="material-symbols-outlined">
+                                    chevron_right </span>Next</button> </td>
                     </tr>
                 </tfoot>
             </table>
         </section>
-
-
-            
-
-
-      
     </main>
 </body>
+
 </html>
