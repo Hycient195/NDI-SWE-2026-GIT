@@ -1,23 +1,31 @@
 body {
+  background-color: #09152b;
   margin-top: 70px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: white;
 }
 section.simple-table {
   table {
     color: silver;
     border-collapse: collapse;
     font-size: 10px;
-    max-width: 1400px;
     width: 100%;
+    max-width: 1500px;
     border-radius: 10px;
+    margin-right: 40px;
     background-color: #1b2a42;
     margin-inline-start: auto;
     margin-inline-end: auto;
+    margin-block-start: auto;
+    margin-block-end: auto;
 
     thead {
       tr {
         th {
-          border-bottom: 1px solid gray;
+          border-bottom: 1px solid rgba(123, 123, 123, 0.427);
           padding: 16px 8px;
           text-align: left;
           font-size: 15px;
@@ -38,7 +46,7 @@ section.simple-table {
       .search-box {
         display: flex;
         gap: 10px;
-        width: 100%;
+        width: 70%;
         padding: 7px 10px;
         border-radius: 10px;
         background-color: #09152b;
@@ -59,14 +67,22 @@ section.simple-table {
 
           &::placeholder {
             color: #7f8aa3;
-
           }
         }
       }
+      .search-actions {
+        display: flex;
+        gap: 10px;
+        padding: 16px 8px;
+      }
     }
     .head-tr {
-      background-color: rgba(10, 15, 78, 0.301);
-      border-top: 1px solid gray;
+      background-color: #29375b90;
+      border-top: 1px solid rgba(123, 123, 123, 0.178);
+    }
+
+    .search-tr {
+      border-top: 1px solid rgba(123, 123, 123, 0.178);
     }
   }
   tbody {
@@ -76,9 +92,10 @@ section.simple-table {
       }
 
       td {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-        color: #97a3bb;
+        border-bottom: 1px solid rgba(123, 123, 123, 0.178);
+        color: #9aaed5ad;
         font-size: 12px;
+        padding: 16px 8px;
       }
 
       td:nth-child(1) {
@@ -91,7 +108,7 @@ section.simple-table {
 
   tfoot {
     tr {
-      border-top: 1px solid rgb(95, 91, 91);
+      border-top: 1px solid rgba(123, 123, 123, 0.178);
       td {
         padding: 16px 8px;
       }
@@ -99,27 +116,28 @@ section.simple-table {
   }
 }
 .action-btn {
-  background-color: #111b31;
+  background-color: #2d3b56;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   cursor: pointer;
   color: #dbe4f0;
   padding: 8px;
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  height: 35px;
 
   &:hover {
     background-color: #1a2744;
   }
 
   span {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
 .prev-btn,
 .next-btn {
   background-color: #334264;
+  font-size: 12px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   cursor: pointer;
@@ -127,10 +145,13 @@ section.simple-table {
   padding: 8px 14px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  /* margin: 8px 14px; */
 
   &:hover {
     background-color: #1a2744;
   }
+  span {
+    font-size: 15px;
+  }
 }
-

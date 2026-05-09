@@ -15,47 +15,77 @@
         <h1>Question 3</h1>
         <section class="simple-table">
             <table cellpadding="15">
-                <thead>
-                    <tr class="main-head-tr">
-                        <th><span class="material-symbols-outlined"> deployed_code_account </span>Access Profile <br>
-                            <small>config access profiles with trust policies for evaluated sessions.</small></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th colspan="4"> <button class="create-btn">+ Create Access Profile</button> </th>
-                    </tr>
-                    <tr>
-                        <th>  <div class="search-box">
+               <thead>
 
-              <span class="material-symbols-outlined">
-                search
-              </span>
+    <!-- TOP HEADER -->
+ <tr class="main-head-tr">
+  <th colspan="4">
+    <span class="material-symbols-outlined"> deployed_code_account </span>Access
+    Profile <br />
+    <small
+      >config access profiles with trust policies for evaluated sessions.</small
+    >
+  </th>
 
-              <input
-                type="text"
-                placeholder="Search access profiles by name"
-              />
+  <td colspan="4">
+    <button class="create-btn">+ Create Access Profile</button>
+  </td>
+</tr>
+
+
+    <!-- SEARCH ROW -->
+    <tr class="search-tr">
+
+        <!-- SEARCH -->
+        <td colspan="5">
+
+            <div class="search-box">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search access profiles by name"
+                />
 
             </div>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button class="action-btn"> <span class="material-symbols-outlined"> close </span></button>
-                            &nbsp; <button class="action-btn"> <span class="material-symbols-outlined"> rocket_launch
-                                </span></button> </td>
-                        </th>
-                    </tr>
-                    <tr class="head-tr">
-                        <th>Access profile</th>
-                        <th>Description</th>
-                        <th>Path</th>
-                        <th>Max session</th>
-                        <th>Created</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
+
+        </td>
+
+        <!-- ACTION ICONS -->
+        <td class="search-actions">
+
+            <button class="action-btn">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+
+            <button class="action-btn">
+                <span class="material-symbols-outlined">
+                    rocket_launch
+                </span>
+            </button>
+
+        </td>
+
+    </tr>
+
+    <!-- TABLE HEADERS -->
+    <tr class="head-tr">
+
+        <th>Access profile</th>
+        <th>Description</th>
+        <th>Path</th>
+        <th>Max session</th>
+        <th>Created</th>
+        <th>Actions</th>
+
+    </tr>
+
+</thead>
                 <tbody>
                     <tr>
           <td>Staff Workspace</td>
@@ -197,10 +227,11 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4">10 items</td>
+                    
+                        <td colspan="3">10 items</td>
                         <td colspan="1"><button class="prev-btn">10<span class="material-symbols-outlined"> close
                                 </span></button></td>
-                        <td><button class="prev-btn"><span class="material-symbols-outlined"> chevron_left
+                        <td colspan="2"><button class="prev-btn"><span class="material-symbols-outlined"> chevron_left
                                 </span>Prev</button> <button class="next-btn"> <span class="material-symbols-outlined">
                                     chevron_right </span>Next</button> </td>
                     </tr>
