@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Control</title>
+</head>
+<body>
+    <main>
+        <ol>
+            <li>Git</li>
+            <li>GitHub</li>
+        </ol>
+        <ul>
+            <li>Initialize a git repository using <code>git init</code></li>
+            <li>Configure user name using <code>git config --global user.name 'My Name'</code></li>
+            <li>Branch Definition: A branch is an independent line of development that allows you to work on new features, fix bugs, or experiment without affecting the main codebase</li>
+        </ul>
+        <p>Staging, preparing our changes to be synchronized with our repository, is done using the <code>git add</code> and <code>git commit</code> commands.</p>
+
+        <p>To create a new branch use command <code>git branch &lt;branch-name&gt;</code></p>
+
+        <section>
+            <h2>Commands</h2>
+            <dl>
+                <dt><code>git init</code></dt>
+                <dd>Initialize a new Git repository</dd>
+                <dt><code>git config --global user.name 'My Name'</code></dt>
+                <dd>Set the global username for Git commits</dd>
+                <dt><code>git branch &lt;branch-name&gt;</code></dt>
+                <dd>Create a new branch</dd>
+                <dt><code>git add &lt;file&gt;</code></dt>
+                <dd>Add changes to the staging area</dd>
+                <dt><code>git status</code></dt>
+                <dd>Show the working directory status</dd>
+                <dt><code>git commit -m "commit message"</code></dt>
+                <dd>Commit changes with a message</dd>
+                <dt><code>git config --global init.defaultBranch &lt;branch-name&gt;</code></dt>
+                <dd>Set the default branch name for new repositories</dd>
+                <dt><code>git checkout &lt;branch-name&gt;</code></dt>
+                <dd>Switch to a different branch</dd>
+                <dt><code>git log</code></dt>
+                <dd>View the commit history</dd>
+                <dt><code>git log --oneline</code></dt>
+                <dd>View the commit history in a condensed format</dd>
+                <dt><code>git branch -d &lt;branch-name&gt;</code></dt>
+                <dd>Soft delete a merged branch</dd>
+                <dt><code>git branch -D &lt;branch-name&gt;</code></dt>
+                <dd>Force delete a branch</dd>
+                <dt><code>git checkout &lt;commit hash&gt;</code></dt>
+                <dd>Switch to a specific commit</dd>
+            </dl>
+
+            <section>
+                <h3>Rules for commit messages</h3>
+                <ol>
+                    <li>Commit messages must be concise</li>
+                    <li>Commit message should be direct and imperative</li>
+                </ol>
+                <p>Your commit messages should sound more like an answer to the question "if applied to the codebase this commit will ____________"</p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

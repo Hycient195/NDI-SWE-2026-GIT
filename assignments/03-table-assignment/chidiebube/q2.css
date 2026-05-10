@@ -11,13 +11,8 @@ section.layout-table {
 
   td {
     text-align: center;
-<<<<<<< HEAD
     font-size: 20px;
     font-weight: bold;
-=======
-    font-size: 12px;
-    font-weight: 600;
->>>>>>> e07b71c7bc74a16218ab39a95970ac515fe64f72
     background-color: #d3e5f9;
     color: #555;
     /* height: 10px; */

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        form > fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 2;
+        }
+    </style>
+    <title>Introduction to HTML Forms</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <!-- form controls -->
+            <fieldset>
+                <legend>Form Input Types</legend>
+                
+                <label for="fullName">Full Name</label>
+                <input id="fullName" type="text"> <!-- Paschal Case Text input -->
+
+                <br>
+
+                <label for="currentPassword">Current Password</label>
+                <input id="currentPassword" type="password">
+
+                <br>
+
+                <label for="email">Email</label>
+                <input id="email" type="email">
+
+                <br>
+
+                <label for="age">Age</label>
+                <input id="age" type="number">
+
+                <br>
+
+                <label for="birthDate">Birth Date</label>
+                <input id="birthDate" type="date">
+
+                <br>
+
+                <label for="profilePicture">Profile Picture</label>
+                <input id="profilePicture" type="file">
+
+                <br>
+
+                <label for="subscribe">
+                    <input id="subscribe" type="checkbox">
+                    I Agree to terms and conditions
+                </label>
+                
+                <br>
+
+                <label for="male">
+                    <input name="gender" id="male" type="radio">
+                    Male
+                </label>
+                <label for="female">
+                    <input name="gender" id="female" type="radio">
+                    Female
+                </label>
+
+                <br>
+
+                <label for="themeColor">Theme Color</label>
+                <input type="color">
+
+                <br>
+
+                <label for="eventDateTime">Event Date and Time</label>
+                <input id="eventDateTime" type="datetime-local">
+
+                <br>
+
+                <label for="startTime">Start Time</label>
+                <input id="startTime" type="time">
+
+                <br>
+
+                <label for="priceRange">Price Range</label>
+                <input id="priceRange" type="range">
+
+                <br>
+
+                <label for="searchText">Search Text</label>
+                <input id="searchText" type="search">
+
+                <br>
+
+                <label for="phoneNumber">Phone Number</label>
+                <input id="phoneNumber" type="tel">
+
+                <br>
+
+                <label for="month">Month</label>
+                <input id="month" type="month">
+
+                <br>
+
+                <label for="week">Week</label>
+                <input id="week" type="week">
+
+                <br>
+
+                <label for="website">Website</label>
+                <input id="website" type="url">
+
+                <br>
+
+                <input type="reset">
+            </fieldset>
+        </form>
+
+        <br>
+
+        <form action="">
+            <fieldset>
+                <legend>Form Input Attributes</legend>
+
+                <label for="">Name Attribute</label>
+                <input type="text" name="firstName"> <!-- name attribute -->
+                <br>
+
+                <label for="">Placeholder</label>
+                <input type="text" placeholder="First Name"> <!-- placeholder attribute -->
+                <br>
+
+                <label for="">Required Input</label>
+                <input type="text" required> <!-- required attribute -->
+                <br>
+
+                <label for="">Min And Max Lengths</label>
+                <input type="text" minlength="3" maxlength="6">
+                <br>
+
+                <label for="">Readonly and Value</label>
+                <input type="text" readonly value="John Doe">
+                <br>
+
+                <label for="">Disabled</label>
+                <input type="text" disabled>
+                <br>
+
+                <label for="">Step</label>
+                <input type="number" step="20">
+                <br>
+
+                <label for="">Min and Max</label>
+                <input type="number" min="0" max="10">
+                <br>
+
+                <label for="">Multple Files</label>
+                <input type="file" multiple>
+                <br>
+
+                <label for="">Accept</label>
+                <input type="file" accept="image/png,image/jpeg,image/jpg,application/pdf">
+                <br>
+
+                <button type="submit">Submit Details</button>
+            </fieldset>
+        </form>
+
+        <br>
+
+        <form action="">
+            <fieldset>
+                <legend>Other Form Elements</legend>
+
+                <label for="">Textarea Form Element </label><br>
+                <textarea name="" id="" rows="4" maxlength="100" placeholder="Explain"></textarea>
+                <br>
+
+                <label for="">Select Input</label>
+                <select name="" id="">
+                    <option value="salmon">Salmon</option>
+                    <option value="titus">Titus</option>
+                    <option value="catfish">Catfish</option>
+                </select>
+
+                <br>
+
+                <label for="places">Place</label>
+                <input list="listPlaces" type="text" id="places" name="places">
+
+                <datalist id="listPlaces">
+                    <option value="Lagos">
+                    <option value="Abuja">
+                    <option value="Port Harcourt">
+                </datalist>
+
+            </fieldset>
+        </form>
+
+    </main>
+</body>
+</html>
