@@ -1,0 +1,130 @@
+section.table{
+    table{
+        border: 1px  rgb(46, 23, 23);
+        border-radius: 8px;
+        border-collapse: collapse;
+        background-color: rgb(25, 20, 62);
+        color: rgba(255, 255, 255, 0.686);
+        max-width: 1400px;
+        min-width: 1300px;
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        text-align: left;
+        
+        
+
+        thead{
+            tr {
+                border-top: 1px solid rgba(255, 255, 255, 0.196);
+            th {
+                padding: 10px 10px 10px 5px;
+                text-align: left;
+                }
+            }
+          }      
+            
+            #profile-icon{
+                color: rgb(90, 127, 169);
+                padding: 1px 1px;
+            }
+            .create-profile-button{
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                border-radius: 7px;
+                padding:5px;
+                min-width: 180px;
+               
+                    }
+
+            .cancel-search{
+                width:45px ; 
+                border-color: aliceblue;
+                color: rgb(255, 255, 255);
+                    border-radius: 7px;
+                    padding:5px;
+                    background-color:rgba(255, 228, 196, 0) ;     
+                }
+
+            .rocket-icon{
+                    width:45px ; 
+                    border-color: aliceblue;
+                    color: rgb(255, 255, 255);
+                    border-radius: 7px;
+                    padding:5px;
+                    background-color:rgba(255, 228, 196, 0) ;   
+                }
+
+            #search-input{
+                    width: 1000px;
+                    height: 30px;
+                    border: 20px;
+                    border-color: rgb(249, 249, 249);
+                    color: rgb(255, 255, 255);
+                    border-radius: 8px;
+                    background-color: rgba(255,255,255,0.1);
+                    
+                }
+
+                    #search-input::placeholder{
+                    border-radius: 10px;
+                    color: rgba(255, 255, 255, 0.365);
+                    padding: 5px 20px;
+                    background-color:rgba(193, 179, 179, 0) ;
+   
+                }
+                
+            .header-row{
+                    background-color: rgba(255, 255, 255, 0.066);  
+                    
+                    
+                      
+                }
+            
+            tbody{
+                tr {
+                td {
+                    border-top: 1px solid rgba(255, 255, 255, 0.186);
+                    padding: 10px 20px;
+                    color: rgba(243, 243, 246, 0.369);
+                }
+                } 
+                .action-icon{
+                width:35px ; 
+                border-color: aliceblue;
+                color: rgb(255, 255, 255);
+                border-radius: 7px;
+                padding:5px;
+                background-color:rgba(255, 228, 196, 0) ;  
+
+            }
+        }
+        
+        .footer{
+            border-top: 1px solid rgba(255, 255, 255, 0.198);
+            padding:10px 10px; 
+            
+            .cancel-button{
+                width:70px ; 
+                border-color: aliceblue;
+                color: rgb(255, 255, 255);
+                border-radius: 7px;
+                padding:5px;
+                background-color:rgba(255, 228, 196, 0) ;  
+            }
+
+
+
+
+        }
+            
+
+    }
+            
+            
+
+}
+           
+        
+            
+    
