@@ -1,0 +1,67 @@
+body {
+    margin-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section.simple-table {
+  table {
+    color: rgb(229, 198, 238);
+    border-collapse: collapse;
+    font-size: 12px;
+    max-width: 1000px;
+    width: 100%;
+
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-block-start: auto;
+    margin-block-end: auto;
+
+    margin: auto;
+    background-image: linear-gradient(
+      90deg,
+      rgba(43, 43, 224, 0.932) 40%,
+      #9c41c0
+    );
+
+    thead {
+      background-image: linear-gradient(
+        80deg,
+        rgba(93, 93, 218, 0.932) 40%,
+        #bf67e2
+      );
+      tr {
+        th {
+          font-size: 10px;
+          text-transform: uppercase;
+          padding: 32px 8px;
+          text-align: left;        
+        }
+      }
+
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 20px;
+          text-align: left;
+          padding: 20px 15px;
+        }
+        
+
+        td:nth-child(4) {
+          background-color: rgba(126, 93, 218, 0.932);
+        }
+      }
+    }
+  }
+}
+
+tr:hover {
+  background-image: linear-gradient(90deg, rgba(93, 93, 218, 0.932), #bf67e2);
+}
+
+td:hover {
+  background-image: linear-gradient(90deg, rgba(180, 114, 224, 0.932));
+}
+

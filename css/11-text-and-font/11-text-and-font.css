@@ -1,0 +1,242 @@
+main > h4.red-text {
+    color: red;
+}
+
+li.serif {
+    font-family: serif;
+}
+
+li.sans-serif {
+    font-family: sans-serif;
+}
+
+li.monospace {
+    font-family: monospace;
+}
+
+li.cursive {
+    font-family: cursive;
+}
+
+li.fantasy {
+    font-family: fantasy;
+}
+
+/* Font Fallback */
+h4.font-fallback {
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+h4.device-specific {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* ====== Exernal Fonts ======== */
+
+/* Via a CDN (Content Delivery Network) Link */
+h4.cdn-external-font {
+    font-family: "Playwrite AR Guides";
+}
+
+/* Via a locally downloaded font file */
+@font-face {
+    font-family: "My Custom Font";
+    src: url("./Playwrite_AR_Guides,Playwrite_DE_SAS/Playwrite_DE_SAS/PlaywriteDESAS-VariableFont_wght.ttf");
+}
+
+h4.local-external-font {
+    font-family: "My Custom Font";
+}
+
+
+/* ======= Font Weights =========== */
+section.font-weights {
+    font-family: "My Custom Font";
+}
+section.font-weights > h4.fw-100 {
+    font-weight: 100;
+}
+section.font-weights > h4.fw-200 {
+    font-weight: 200;
+}
+section.font-weights > h4.fw-300 {
+    font-weight: 300;
+}
+section.font-weights > h4.fw-400 {
+    font-weight: 400;
+}
+section.font-weights > h4.fw-500 {
+    font-weight: 500;
+}
+section.font-weights > h4.fw-600 {
+    font-weight: 600;
+}
+section.font-weights > h4.fw-700 {
+    font-weight: 700;
+}
+section.font-weights > h4.fw-800 {
+    font-weight: 800;
+}
+section.font-weights > h4.fw-900 {
+    font-weight: 900;
+}
+
+
+/* ====== Font Size ========= */
+section.font-size > p.ten {
+    font-size: 10px;
+}
+
+section.font-size > p.twenty {
+    font-size: 20px;
+}
+
+section.font-size > p.thirty {
+    font-size: 30px;
+}
+
+section.font-size > p.forty {
+    font-size: 40px;
+}
+
+/* ======== LIne Height ========= */
+section.line-height > p.lh-ten {
+    line-height: 10px;
+}
+
+section.line-height > p.lh-twenty {
+    line-height: 20px;
+}
+
+section.line-height > p.lh-thirty {
+    line-height: 30px;
+}
+
+
+/* Font Style */
+section > p.italic-text {
+    font-style: italic;
+}
+
+section > p.oblique-text {
+    font-style: oblique;
+}
+
+/* Text Transform */
+section > p.uppercase {
+    text-transform: uppercase;
+}
+
+section > p.lowercase {
+    text-transform: lowercase;
+}
+
+section > p.capitalize {
+    text-transform: capitalize;
+}
+
+/* Text Decoration */
+section > p.text-overline {
+    text-decoration-line: overline;
+    text-decoration-color: orangered;
+    text-decoration-style: dashed;
+}
+
+section > p.text-underline {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-style: dotted;
+}
+
+section > p.text-line-through {
+    text-decoration-line: line-through;
+    text-decoration-color: blueviolet;
+    text-decoration-style: double;
+}
+
+section > p.text-line-decoration-style {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+section > p.text-decoration-shorthand {
+    text-decoration: overline wavy teal;
+}
+
+section > p.multi-text-decoration {
+    text-decoration: overline underline line-through wavy green;
+}
+
+
+
+/* ====== Text Shadow ======= */
+section > p.text-shadow {
+    font-size: 40px;
+    font-weight: 900;
+
+    /*
+        First value is offset in x-direction to the right,
+        second value is offset in y-direction downwards,
+        third value is blur radius,
+        fourth value is color
+    */
+    text-shadow:
+        2px 2px 0px violet,
+        4px 4px 0px teal;
+
+}
+
+
+/* ====== Text Alignment ====== */
+section > p.text-left {
+    text-align: left;
+}
+
+section > p.text-center {
+    text-align: center;
+}
+
+section > p.text-right {
+    text-align: right;
+}
+
+section > p.text-justify {
+    text-align: justify;
+}
+
+
+/* ===== Letter and Word Spacing ===== */
+section > p.letter-spacing {
+    letter-spacing: 8px;
+}
+
+section > p.word-spacing {
+    word-spacing: 15px;
+}
+
+
+/* ======= Text Layout ========= */
+section > p.text-indent {
+    text-indent: 30px;
+}
+
+section > p.text-overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 300px;
+}
+
+section > p.word-break {
+    word-break: break-all;
+}
+
+section > p.writing-mode {
+    writing-mode: vertical-rl;
+    /* text-orientation: sideways-right; */
+}
+
+section > p.text-direction {
+    direction: rtl;
+}
