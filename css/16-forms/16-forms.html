@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="16-forms.css">
+    <title>Styling Forms</title>
+</head>
+<body>
+    <main>
+        <!-- <h1>Styling Forms</h1> -->
+        <section class="form-container">
+            <form action="">
+                <div class="headings">
+                    <h1>Sign Up</h1>
+                    <p>It's free and only takes a minute</p>
+                </div>
+                <div class="inputs">
+                    <label for="firstName">
+                        <span>First Name</span>
+                        <input type="text" id="firstName" name="firstName">
+                    </label>
+                    <label for="lastName">
+                        <span>Last Name</span>
+                        <input type="text" id="lastName" name="lastName">
+                    </label>
+                    <label for="email">
+                        <span>Email</span>
+                        <input type="email" id="email" name="email">
+                    </label>
+                    <label for="country">
+                        <span>Country</span>
+                        <select name="country" id="country">
+                            <option value="">Nigeria</option>
+                            <option value="">Cameroon</option>
+                            <option value="">Ghana</option>
+                        </select>
+                    </label>
+                    <label for="">
+                        <span>Description</span>
+                        <textarea name="" id="" rows="4"></textarea>
+                    </label>
+                    <label for="password">
+                        <span>Password</span>
+                        <input type="password" id="password" name="password">
+                    </label>
+                    <label for="confirmPassword">
+                        <span>Confirm Password</span>
+                        <input type="password" id="confirmPassword" name="confirmPassword">
+                    </label>
+                    <label class="agree" for="agree">
+                        <input type="checkbox" id="agree" name="agree">
+                        <span>I agree to the terms and conditions</span>
+                    </label>
+                    <label for="signature">
+                        <span>Attach Signature</span>
+                        <input type="file" id="signature" name="signature">
+                    </label>
+                </div>
+                <div class="form-footer">
+                    <button>Sign Up</button>
+                    <p>By clicking the sign Up button, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
