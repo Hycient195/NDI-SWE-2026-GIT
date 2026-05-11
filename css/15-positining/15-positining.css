@@ -1,0 +1,118 @@
+main {
+    div.top {
+        background-color: red;
+        height: 40px;
+    }
+    div.under-top {
+        background-color: blue;
+        height: 60px;
+    }
+    div.another {
+        background-color: green;
+        height: 80px
+    }
+    div.yet-another {
+        background-color: cyan;
+        height: 100px;
+    }
+
+    fieldset {
+        background-color: rgba(0, 255, 0, 0.2);
+    }
+
+    section.static-position {
+        div.top {
+            position: static;
+            /* top, left, bottom, right properties will not have any effect */
+        }
+    }
+
+    /* Relative Positioning */
+    section.relative-position {
+        div.top {
+            position: relative;
+            top: 10px;
+            left: 40px;
+            /* Other properties to influence positioning include bottom and right */
+            /* bottom: 30px;
+            right: 50px; */
+        }
+        div.under-top {
+            
+        }
+    }
+
+    /* Absolute Positioning */
+    section.absolute-position {
+        fieldset {
+            position: relative;
+        }
+        div.top {
+            position: absolute;
+            /* width: 100%; */
+            top: 10px;
+            left: 40px;
+        }
+    }
+
+    /* Fixed Positioning */
+    section.fixed-position {
+        fieldset {
+            position: relative; /* Relative ancestors do not affect fixed positioned children elements */
+        }
+        div.top {
+            position: fixed;
+            top: 10px;
+            left: 40px;
+            /* width: 100%; */
+            /* top: 10px;
+            left: 40px; */
+        }
+    }
+
+    /* Z-index and visual display hierarchy */
+    section.z-index {
+        div.container-box {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        div[class^="element-"] {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        div.element-1 {
+            background-color: red;
+            z-index: 1;
+        }
+        div.element-2 {
+            background-color: orangered;
+            left: 50px;
+        }
+        div.element-3 {
+            background-color: orange;
+            top: 50px;
+        }
+        div.element-4 {
+            background-color: yellow;
+            top: 50px;
+            left: 50px;
+        }
+    }
+
+    section.sticky-position {
+        div.sticky-container {
+            height: 200px;
+            overflow-y:scroll;
+
+            div.top {
+                position: sticky;
+                top: 0px;
+            }
+        }
+    }
+}
