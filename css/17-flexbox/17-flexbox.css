@@ -9,6 +9,7 @@ main {
             display: flex;
             min-height: 500px;
 
+            /* Works on primary axis */
             /* Possible values of flex-start, flex-end, center, space-between, space-around, space-evenly */
             justify-content: space-between; 
 
@@ -32,8 +33,9 @@ main {
             min-height: 500px;
             gap: 20px; /* Uniform gap spacing between flex items*/
 
+            /* Works on the cross (secondary) axis */
             /* Possible values of flex-start, flex-end, center, baseline, stretch */
-            /* align-items: center;  */
+            align-items: center; 
             
 
             div.box {
