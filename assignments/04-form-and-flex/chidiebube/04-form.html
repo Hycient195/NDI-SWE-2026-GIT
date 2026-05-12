@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="04-form.css">
+   <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Form Assignment</title>
 </head>
 <body>
@@ -25,24 +27,27 @@
                 </div>
 
                 <div class="inputs">
-                    <label for="firstName"
-                    ><span>First Name</span>
-                    <input type="text" name="firstName">
+                    <label class="input-box" for="fullName"
+                    ><span>Full Name:</span>
+                    <input type="text" name="fullName" class="placeholder" placeholder="Ex. Chidiebube Williams" required>
+                     <i class="fa-solid fa-user"></i>
                     </label>
 
                     <label for="email"
-                    ><span>Your Email</span>
+                    ><span>Your Email:</span>
                     <input type="email" name="email" required>
                     </label>
 
-                    <label for="password"
-                    ><span>Password</span>
+                    <label class="input-box" for="password"
+                    ><span>Password:</span>
                     <input type="password" name="password" required>
+                    <i class="fa-solid fa-lock"></i>
                     </label>
 
-                    <label for="confirmPassword"
-                    ><span>Confirm Password</span>
+                    <label class="input-box" for="confirmPassword"
+                    ><span>Confirm Password:</span>
                     <input type="password" name="confirmPassword" required>
+                    <i class="fa-solid fa-lock"></i>
                     </label>
 
                     <label class="agree"
