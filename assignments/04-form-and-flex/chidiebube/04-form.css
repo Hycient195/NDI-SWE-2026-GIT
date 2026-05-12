@@ -1,0 +1,63 @@
+/* Resetting the default styles of all elements to ensure consistency
+ across different browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(170deg, #9dcadf 60%, #d99ae6);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    /* styling the form */
+    .form-container {
+        width: 100%;
+        max-width: 1200px;
+        background-color: white;
+        border-radius: 10px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        display: flex;
+    }
+
+    .left-side {
+        background: linear-gradient(rgba(86, 64, 255, 0.6),
+                rgba(86, 64, 255, 0.6)),
+                url("photo.avif");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 40px;
+
+        /* styling the text */
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+    }
+}
+
+
