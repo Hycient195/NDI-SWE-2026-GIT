@@ -252,19 +252,21 @@ main {
 
                 /* This allows the flex items to grow and fill the available space in the container. */
                 /* flex-grow: 1; */
-                flex-basis: 300px; /* This property specifies the initial main size of a flex item before any free space is distributed. It can be a length value (e.g., 300px) or a percentage (e.g., 50%). Default value is auto, which means the size of the item is based on its content. */
+
+                /* This property specifies the initial main size of a flex item before any free space is distributed. It can be a length value (e.g., 300px) or a percentage (e.g., 50%). Default value is auto, which means the size of the item is based on its content. */
+                flex-basis: 300px; 
 
                 /* This property specifies how much a flex item will shrink relative to the rest of the flex items inside the same container when negative free space is distributed. Possible values are non-negative integers. Default value is 1, which means the item will shrink if necessary. */
                 /* flex-shrink: 0; */
             }
 
             div.box:nth-child(1) {
-                flex-grow: 2;
+                /* flex-grow: 2; */
                 flex-shrink: 0;
             }
 
             div.box:nth-child(2) {
-                flex-grow: 1;
+                /* flex-grow: 1; */
                 flex-shrink: 3;
             }
 
