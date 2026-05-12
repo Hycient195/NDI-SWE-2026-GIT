@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="17-flexbox.css">
+    <title>Introduction to Flexbox</title>
+</head>
+<body>
+    <main>
+        <h1>Flexbox</h1>
+        <section class="intro">
+            <h2>Introduction</h2>
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </section>
+        <hr>
+        <section class="alignment">
+            <h2>Alignment</h2>
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </section>
+        <hr>
+        <section class="flex-direction">
+            <h2>Flex Direction</h2>
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </section>
+        <hr>
+        <section class="centralize-box">
+            <h2>Centralize Box</h2>
+            <div class="container">
+                <div class="box"></div>
+            </div>
+        </section>
+        <hr>
+        <section class="flex-wrap">
+            <h2>Flex Wrap</h2>
+            <p>This is used to wrap children elements of a flex parent after their cummulative width exceeds the width of their parent</p>
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+                <div class="box">10</div>
+                <div class="box">11</div>
+                <div class="box">12</div>
+            </div>
+        </section>
+        <hr>
+        <section class="order">
+            <h2>Order</h2>
+            <p>This is used to change the order of flex items within a flex container.</p>
+            <div class="container">
+                <div class="box">1 <span>(order 0)</span></div>
+                <div class="box">2 <span>(order 1)</span></div>
+                <div class="box">3 <span>(order 2)</span></div>
+                <div class="box">4 <span>(order 0)</span></div>
+                <div class="box">5 <span>(order -1)</span></div>
+            </div>
+
+            <div class="list-container">
+                <div class="wrapper-container">
+                    <div class="wrapper">
+                        <div class="bg"></div>
+                        <div class="fg"></div>
+                    </div>
+                    <div class="texts">
+                        <h3>A Graceful Start</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni voluptatum dolorum, aut fuga consequatur sapiente ea eum numquam consequuntur iste laborum ex vitae exercitationem! Rem aut eum totam perferendis optio, temporibus nisi numquam laudantium? Consequuntur, beatae error. Quia ad id, perspiciatis iste suscipit at nisi ipsa in quas harum.</p>
+                    </div> 
+                </div>
+                <div class="wrapper-container">
+                    <div class="wrapper">
+                        <div class="bg"></div>
+                        <div class="fg"></div>
+                    </div>
+                    <div class="texts">
+                        <h3>A Graceful Start</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni voluptatum dolorum, aut fuga consequatur sapiente ea eum numquam consequuntur iste laborum ex vitae exercitationem! Rem aut eum totam perferendis optio, temporibus nisi numquam laudantium? Consequuntur, beatae error. Quia ad id, perspiciatis iste suscipit at nisi ipsa in quas harum.</p>
+                    </div> 
+                </div>
+                <div class="wrapper-container">
+                    <div class="wrapper">
+                        <div class="bg"></div>
+                        <div class="fg"></div>
+                    </div>
+                    <div class="texts">
+                        <h3>A Graceful Start</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni voluptatum dolorum, aut fuga consequatur sapiente ea eum numquam consequuntur iste laborum ex vitae exercitationem! Rem aut eum totam perferendis optio, temporibus nisi numquam laudantium? Consequuntur, beatae error. Quia ad id, perspiciatis iste suscipit at nisi ipsa in quas harum.</p>
+                    </div>  
+                </div>
+                <div class="wrapper-container">
+                    <div class="wrapper">
+                        <div class="bg"></div>
+                        <div class="fg"></div>
+                    </div>
+                    <div class="texts">
+                        <h3>A Graceful Start</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni voluptatum dolorum, aut fuga consequatur sapiente ea eum numquam consequuntur iste laborum ex vitae exercitationem! Rem aut eum totam perferendis optio, temporibus nisi numquam laudantium? Consequuntur, beatae error. Quia ad id, perspiciatis iste suscipit at nisi ipsa in quas harum.</p>
+                    </div> 
+                </div>
+                <div class="wrapper-container">
+                    <div class="wrapper">
+                        <div class="bg"></div>
+                        <div class="fg"></div>
+                    </div>
+                    <div class="texts">
+                        <h3>A Graceful Start</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni voluptatum dolorum, aut fuga consequatur sapiente ea eum numquam consequuntur iste laborum ex vitae exercitationem! Rem aut eum totam perferendis optio, temporibus nisi numquam laudantium? Consequuntur, beatae error. Quia ad id, perspiciatis iste suscipit at nisi ipsa in quas harum.</p>
+                    </div> 
+                </div>
+                <div class="wrapper-container">
+                    <div class="wrapper">
+                        <div class="bg"></div>
+                        <div class="fg"></div>
+                    </div>
+                    <div class="texts">
+                        <h3>A Graceful Start</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni voluptatum dolorum, aut fuga consequatur sapiente ea eum numquam consequuntur iste laborum ex vitae exercitationem! Rem aut eum totam perferendis optio, temporibus nisi numquam laudantium? Consequuntur, beatae error. Quia ad id, perspiciatis iste suscipit at nisi ipsa in quas harum.</p>
+                    </div> 
+                </div>
+                <div class="wrapper-container">
+                    <div class="wrapper">
+                        <div class="bg"></div>
+                        <div class="fg"></div>
+                    </div>
+                    <div class="texts">
+                        <h3>A Graceful Start</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni voluptatum dolorum, aut fuga consequatur sapiente ea eum numquam consequuntur iste laborum ex vitae exercitationem! Rem aut eum totam perferendis optio, temporibus nisi numquam laudantium? Consequuntur, beatae error. Quia ad id, perspiciatis iste suscipit at nisi ipsa in quas harum.</p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="flex-grow">
+            <h2>Flex Grow</h2>
+                <p>This is used to specify how much a flex item should grow relative to the rest of the flex items in the flex container when there is extra space available.</p>
+                <div class="container">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                </div>
+        </section>
+        <hr>
+        <section class="flex-shrink">
+            <h2>Flex Shrink And Flex Basis</h2>
+                <p>This is used to specify how much a flex item should shrink relative to the rest of the flex items in the flex container when there is not enough space available.</p>
+                <div class="container">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                </div>
+        </section>
+    </main>
+</body>
+</html>

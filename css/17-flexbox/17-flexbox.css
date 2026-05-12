@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    section.intro {
+        div.container {
+            border: 2px solid black;
+            display: flex;
+            min-height: 500px;
+
+            /* Possible values of flex-start, flex-end, center, space-between, space-around, space-evenly */
+            justify-content: space-between; 
+
+
+            div.box {
+                min-width: 80px;
+                min-height: 80px;
+                border: 1px solid black;
+                background-color: orangered;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    /* Alignment */
+    section.alignment {
+        div.container {
+            border: 2px solid black;
+            display: flex;
+            min-height: 500px;
+            gap: 20px; /* Uniform gap spacing between flex items*/
+
+            /* Possible values of flex-start, flex-end, center, baseline, stretch */
+            /* align-items: center;  */
+            
+
+            div.box {
+                min-width: 80px;
+                min-height: 80px;
+                border: 1px solid black;
+                background-color: orangered;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    /* Flex Direction */
+    section.flex-direction {
+        div.container {
+            border: 2px solid black;
+            display: flex;
+            min-height: 600px;
+            gap: 20px;
+            align-items: center; /* Possible values of flex-start, flex-end, center, baseline, stretch */
+            flex-direction: column-reverse; /* This alters the main axis to be vertical instead of horizontal. Every other property that is based on axis changes behaviour with respect to the primary axis specified Possible values of row, row-reverse, column, column-reverse */
+            justify-content: space-around; /* Possible values of flex-start, flex-end, center, space-between, space-around, space-evenly */
+            
+
+            div.box {
+                min-width: 70px;
+                min-height: 70px;
+                border: 1px solid black;
+                background-color: orangered;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    /* Centralizing an element in vertical and horizontal directions within a container parent */
+    section.centralize-box {
+
+        div.container {
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center; /* Possible values of flex-start, flex-end, center, baseline, stretch */
+            justify-content: center;
+        }
+        
+
+        div.box {
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            border: 1px solid black;
+            
+        }
+    }
+
+    /* Flex Wrapping */
+    section.flex-wrap {
+        div.container {
+            border: 2px solid black;
+            height: 300px;
+            display: flex;
+
+            /* Possible values of nowrap, wrap, wrap-reverse */
+            /* flex-wrap: wrap;
+            flex-direction: row; */
+            flex-flow: row wrap; /* This is a shorthand for flex-direction and flex-wrap. The first value specifies the flex-direction and the second value specifies the flex-wrap. Possible values of row nowrap, row wrap, row wrap-reverse, column nowrap, column wrap, column wrap-reverse */
+        }
+        
+        div.box {
+            min-width: 80px;
+            min-height: 80px;
+            border: 1px solid black;
+            background-color: orange;
+            display: flex;
+            font-size: 30px;
+        }
+    }
+
+    section.order {
+        div.container {
+            display: flex;
+            border: 1px solid black;
+            min-height: 500px;
+
+            div.box {
+                min-height: 100px;
+                min-width: 100px;
+                border: 1px solid black;
+                background-color: orangered;
+                font-size: 40px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            div.box:nth-child(2) {
+                order: 1;
+            }
+
+            div.box:nth-child(3) {
+                order: 2;
+            }
+
+            div.box:nth-child(5) {
+                order: -1;
+            }
+        }
+
+        div.list-container {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 800px;
+            margin-inline: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 200px;
+
+            div.wrapper-container {
+                display: flex;
+                flex-direction: row;
+
+                div.wrapper {
+                    width: 50%;
+                    position: relative;
+
+                    div.bg {
+                        width: 100%;
+                        height: auto;
+                        aspect-ratio: 1/1;
+                        background-color: orangered;
+                    }
+
+                    div.fg {
+                        width: 50%;
+                        height: auto;
+                        aspect-ratio: 1/1;
+                        background-color: orange;
+                        position: absolute;
+                        bottom: 10%;
+                        right: 10%;
+                    }
+                }
+
+                div.texts {
+                    width: 50%;
+                    padding: 16px;
+
+                    h3 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            div.wrapper-container:nth-child(even) {
+                div.wrapper {
+                    order: 1;
+
+                    div.fg {
+                        left: 10%;
+                    }
+                }
+            }
+        }
+    }
+
+    section.flex-grow {
+        div.container {
+            width: 500px;
+            min-height: 500px;
+            border: 1px solid black;
+            display: flex;
+
+            div.box {
+                min-width: 100px;
+                min-height: 100px;
+                border: 1px solid black;
+                background-color: orchid;
+                font-size: 30px;
+
+                /* This property specifies how much a flex item will grow relative to the rest of the flex items inside the same container when positive free space is distributed. Possible values are non-negative integers. Default value is 0, which means the item will not grow. */
+                /* flex-grow: 1;  */
+            }
+
+            div.box:nth-child(1) {
+                flex-grow: 1;
+            }
+
+            div.box:nth-child(2) {
+                flex-grow: 2;
+            }
+        }
+    }
+
+    section.flex-shrink {
+        div.container {
+            width: 100%;
+            min-height: 500px;
+            border: 1px solid black;
+            display: flex;
+
+            div.box {
+                min-width: 100px;
+                min-height: 100px;
+                border: 1px solid black;
+                background-color: lightblue;
+                font-size: 30px;
+
+                /* This allows the flex items to grow and fill the available space in the container. */
+                /* flex-grow: 1; */
+                flex-basis: 300px; /* This property specifies the initial main size of a flex item before any free space is distributed. It can be a length value (e.g., 300px) or a percentage (e.g., 50%). Default value is auto, which means the size of the item is based on its content. */
+
+                /* This property specifies how much a flex item will shrink relative to the rest of the flex items inside the same container when negative free space is distributed. Possible values are non-negative integers. Default value is 1, which means the item will shrink if necessary. */
+                /* flex-shrink: 0; */
+            }
+
+            div.box:nth-child(1) {
+                flex-grow: 2;
+                flex-shrink: 0;
+            }
+
+            div.box:nth-child(2) {
+                flex-grow: 1;
+                flex-shrink: 3;
+            }
+
+        }
+    }
+}
