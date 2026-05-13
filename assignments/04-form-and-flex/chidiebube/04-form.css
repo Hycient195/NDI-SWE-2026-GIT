@@ -9,7 +9,7 @@
 /* background color */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(170deg, #9dcadf 60%, #d99ae6);
+    background: linear-gradient(135deg, #9dcadf, #d99ae6);
 }
 
 main {
@@ -147,8 +147,9 @@ main {
             align-items: center;
             gap: 10px;
 
-            input {
-                width: auto;
+            input[type="checkbox"] {
+                width: 15px;
+                height: 15px;
             }
             
             span {
