@@ -19,27 +19,41 @@ main {
 
 /* HEADER */
 .header-container {
+    width: 100%;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #d8cfc0;
+    padding: 24px 0;
+    position: sticky;
+}
+
+.header-content {
+    width: 85%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #d8cfc0;
+}
 
-    .brand-name h1 {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
+.header-container .brand-name h1 {
+    font-size: 29px;
+    font-weight: 700;
+}
 
-    .nav ul {
-        display: flex;
-        gap: 3rem;
-    }
+.header-container .nav ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
 
-    .nav a {
-        text-decoration: none;
-        color: #1d2736;
-        font-weight: 600;
-    }
+.header-container .nav a {
+    text-decoration: none;
+    color: #1d2736;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header-container .nav a:hover {
+    color: #a14129;
 }
 
 /* Right side  */
@@ -73,10 +87,17 @@ main {
         margin-bottom: 32px;
     }
 
+   
+    button:hover {
+            background-color: #717aa0;
+    }
+
     .top-buttons {
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         gap: 16px;
-    }
+    }    
 
     .primary-button {
         background: #a14129;
@@ -197,10 +218,10 @@ main {
     }
 }
 .panel-3 {
-      display: flex;
-        /* flex: 1; */
+        /* display: flex; */
         justify-content: space-between;
-        
+        /* width: 30px; */
+        /* flex-direction: column; */
 
     h2 {
         font-size: 35px;
@@ -208,8 +229,8 @@ main {
     }
 
     .track-box {
-       /* display: flex; */
-        /* width: 30%; */
+        display: inline-block;
+        flex-direction: column;
         vertical-align: top;
         background-color: #fcfcfc;
         border: 1px solid #d8cfc0;
@@ -231,3 +252,36 @@ main {
     }
 }
 
+@media screen and (max-width: 1112px) {
+    main {
+        width: 90%;
+    }
+
+    .header-content {
+        width: 90%;
+    }
+
+    .hero-section {
+        flex-direction: column;
+
+        .top-child, .right-side {
+            width: 100%;
+        }
+
+        .primary-button, .secondary-button{
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .panel-2 .panel-card {
+        flex-direction: column;
+    }
+
+    .panel-3 .track-box {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+}
