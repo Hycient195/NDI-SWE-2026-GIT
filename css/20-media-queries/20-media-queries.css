@@ -1,0 +1,35 @@
+main {
+    background-color: lightblue;
+    section.demo {
+        display: flex;
+        min-height: 500px;
+        
+        & > div {
+            flex-grow: 1;
+        }
+
+        div.left {
+            /* background-image: url() */
+        }
+    }
+
+    div.box {
+        height: 600px;
+        width: 600px;
+        background-color: yellowgreen;
+        border: 3px solid teal;
+    }
+}
+/* Syntax */
+/* @rule <media-type> and (<condition>) { ... } */
+@media screen and (max-width: 600px) {
+    main {
+        background-color: yellow;
+
+        div.box {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+    }
+}
