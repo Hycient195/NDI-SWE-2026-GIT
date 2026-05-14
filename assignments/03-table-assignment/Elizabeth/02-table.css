@@ -1,0 +1,51 @@
+table {
+     border: 1px solid black;
+    color: black;
+    font-family: arial;
+    font-weight: 100;
+    background-color: lightskyblue;
+    border-collapse: collapse;
+    max-width: 900px;
+    width: 100%;
+    
+    
+}
+
+tbody{
+    tr {
+        td{
+            border: 5px solid whitesmoke;
+           padding: 20px 25px;
+           text-align: center;
+           
+             
+        }
+    } 
+}
+
+tr:nth-child(9) , 
+tr:nth-child(4)  {
+    background-color: rgba(197, 228, 247, 0.835);
+    color: crimson;
+}
+  
+ tr:nth-child(even)   {
+   background-color: rgb(230, 146, 125);
+   color: crimson;
+}
+
+
+
+
+
+    
+
+
+
+
+
+   
+
+
+
+
