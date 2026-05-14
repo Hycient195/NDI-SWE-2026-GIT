@@ -42,14 +42,15 @@ main {
 .header-container .nav ul {
     display: flex;
     gap: 48px;
-    list-style: none;
+    width: 100%;
+    margin: auto;
+    list-style-type: none;
 }
 
 .header-container .nav a {
     text-decoration: none;
     color: #1d2736;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 .header-container .nav a:hover {
@@ -258,7 +259,8 @@ main {
     }
 
     .header-content {
-        width: 90%;
+        width: 100%;
+        flex-direction: column;
     }
 
     .hero-section {
