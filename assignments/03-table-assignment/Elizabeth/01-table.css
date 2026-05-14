@@ -1,0 +1,49 @@
+table {
+    border: 1px solid black;
+    color: white;
+    font-family: arial;
+    font-weight: 100;
+    border-collapse: collapse;
+    max-width: 800px;
+    width: 900px;
+    height: 500px;
+    max-height: 1000px;
+    
+    
+}
+
+ thead {
+              tr {
+                th {
+                    border-bottom: 1px solid black;
+                    padding: 10px 14px;
+                    background: linear-gradient(rgba(161, 50, 241, 0.637));
+                    /* text-align: center; */
+                    
+                }
+                
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    /* border-top: 1px solid rgb(35, 24, 45); */
+                    padding: 6px 8px;
+                    background: linear-gradient(rgba(35, 11, 248, 0.546));
+                    text-align: left;
+                    
+                }
+
+                
+                } 
+                 
+            }
+
+
+            tr:hover {
+                background: rgb(234, 143, 234)
+                
+            }
+
+            
