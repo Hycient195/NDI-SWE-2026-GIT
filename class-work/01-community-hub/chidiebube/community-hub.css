@@ -130,6 +130,7 @@ body {
             background-color: var(--primary-color-dark);
             color: white;
             padding: 16px 32px;
+            cursor: pointer;
           }
 
           button:nth-child(2) {
@@ -137,6 +138,7 @@ body {
             border-radius: var(--border-radius);
             background-color: var(--primary-color-light);
             padding: 16px 32px;
+            cursor: pointer;
           }
         }
       }
@@ -332,5 +334,34 @@ body {
         }
       }
     }
+
+    .panels,
+    .panel {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+
+    .wrapper,
+    .left-side,
+    .intro {
+      width: 100%;
+    }
+
+    .btn-container {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .panels,
+  .panel {
+    flex-direction: column;
+    width: 100%;
   }
 }
