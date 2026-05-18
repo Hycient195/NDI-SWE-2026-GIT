@@ -1,0 +1,43 @@
+main {
+    section {
+        display: grid;
+        max-width: 500px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+
+        div {
+            padding: 40px;
+            border: 1px solid gray;
+        }
+
+        div:nth-child(1) {
+            grid-column: 1 / 2;
+            /* This syntax specifies the start point, a slash and and end point line number (eg: 1/4) starts from line 1, and ends inline 4  */
+            grid-row: 1 / 4;
+            
+        }
+
+        div:nth-child(2) {
+            /* This syntax specifies the start point, and however a span number, which when added to the start point, would land on the end line point. */
+            grid-column: 2 / span 2;
+            grid-row: 1 / 2;
+        }
+
+        div:nth-child(3) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+        }
+
+        div:nth-child(4) {
+            /* grid-column: 3 / span 1;
+            grid-row: 2 / span 2; */
+
+            /* Short hand syntax for the above  { grid-area: [row-start] / [column-start] / [row-end] / [column-end] } */
+            grid-area: 2 / 3 / 4 / 4;
+        }
+    }
+}

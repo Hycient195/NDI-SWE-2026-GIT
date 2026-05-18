@@ -1,0 +1,68 @@
+/* Reset Styles */
+body, h1, h2, h3, h4, h5, h6, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px dashed gray; */
+}
+
+/* Main Styles */
+body {
+    padding: 20px;
+
+    header {
+        div.wrapper {
+            max-width: 1120px;
+            margin-inline: auto;
+
+            h1 {
+                padding-inline: 10px;
+                text-align: center;
+            }
+        }
+
+        nav {
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                list-style-type: none;
+
+                li {
+                    a {
+                        padding: 20px 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        max-width: 1120px;
+        margin-inline: auto;
+        margin-top: 20px;
+
+        aside {
+            ul {
+                list-style-type: none;
+
+                li {
+                    padding: 8px 10px;
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid gray
+    }
+}
