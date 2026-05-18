@@ -12,8 +12,7 @@ ol {
   padding: 0;
   margin: 0;
   font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -26,7 +25,7 @@ ol {
   --primary-color-light: rgb(247, 239, 232);
   --primary-color-dark: rgb(123, 20, 20);
   --bg: linear-gradient(135deg, rgb(247, 238, 219), rgb(235, 223, 209));
-  --border: 1px solid var(--pimary-color-dark);
+  --border: 1px solid rgba(255, 231, 187, 0.589);
   --border-light: 1px solid var(--primary-color-light);
   --border-radius: 50px;
   --container-max-width: 1120px;
@@ -91,10 +90,8 @@ body {
         width: 100%;
         display: flex;
         gap: 16px;
-        /* flex-wrap: wrap; */
-
+        
         & > div {
-          /* flex-grow: 1; */
           flex-basis: 200px;
         }
 
@@ -148,7 +145,7 @@ body {
       background-color: whitesmoke;
       padding: clamp(24px, 2vw, 34px);
       border-radius: 15px;
-      border: var(--border-light);
+      border: var(--border);
       display: flex;
       flex-direction: column;
       flex-grow: 2;
@@ -182,7 +179,7 @@ body {
           background-color: white;
           padding: clamp(24px, 2vw, 34px);
           border-radius: 15px;
-          border: var(--border-light);
+          border: var(--border);
           display: flex;
           flex-direction: column;
           flex-grow: 2;
@@ -217,7 +214,7 @@ body {
           background-color: white;
           padding: clamp(24px, 2vw, 34px);
           border-radius: 15px;
-          border: var(--border-light);
+          border: var(--border);
           display: flex;
           flex-direction: column;
           flex-grow: 2;
@@ -244,7 +241,9 @@ body {
               flex-grow: 2;
               background-color: var(--primary-color-light);
               border-radius: 15px;
+              border: var(--border);
               padding: 20px;
+              
 
               h3 {
                 font-size: 35px;
