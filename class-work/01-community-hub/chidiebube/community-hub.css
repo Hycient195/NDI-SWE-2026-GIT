@@ -282,14 +282,12 @@ body {
 
         div.panels {
           display: flex;
-          justify-content: center;
-          align-items: center;
           padding: 10px;
           gap: 20px;
           flex-wrap: wrap;
 
           div.panel {
-            flex: 1;
+            flex: 2;
             background-color: var(--primary-color-light);
             border-radius: 15px;
             border: var(--border);
