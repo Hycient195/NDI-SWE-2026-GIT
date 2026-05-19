@@ -1,0 +1,159 @@
+main {
+    div.examples {
+        border: 1px dashed gray;
+    }
+
+    div[class*="box"] {
+        height: 120px;
+        width: 120px;
+        border: 1px solid silver;
+    }
+
+    hr {
+        margin-block: 40px;
+    }
+
+    section.translation-x {
+        div.box-one {
+            background-color: lightcoral;
+            transform: translateX(50px);
+        }
+
+        div.box-two {
+            background-color: lightseagreen;
+            transform: translateX(100%)
+        }
+    }
+
+    section.translation-y {
+        div.box-one {
+            background-color: lightcoral;
+            transform: translateY(50px);
+        }
+
+        div.box-two {
+            background-color: lightseagreen;
+            transform: translateY(-80%)
+        }
+    }
+
+    section.translation-xy {
+        div.box-one {
+            background-color: cyan;
+            transform: translate(40px, 40px);
+        }
+
+        div.box-two {
+            background-color: lightseagreen;
+            transform: translate(40%, 40%);
+        }
+    }
+
+    section.scaling {
+        div.box-one {
+            background-color: lightsalmon;
+            /* Element can be transformed to scale using decimal numbers showing to that percentage of its original dimension it it to be magnified or shrinked. This is also strictly a visual resizing and does not change the actual element's dimensions */
+            transform: scale(1.5);
+        }
+        div.box-two {
+            background-color: khaki;
+            transform: scaleX(2.5);
+        }
+        div.box-three {
+            background-color: magenta;
+            transform: scaleY(1.3);
+        }
+    }
+
+    section.rotation {
+        /* Using Degrees */
+        div.box-one {
+            background-color: orangered;
+            transform: rotate(45deg);
+        }
+
+        /* Using Turns */
+        div.box-two {
+            background-color: lightseagreen;
+            /* 1 turn = 360deg */
+            transform: rotate(1.03turn);
+        }
+
+        /* Using Radians */
+        div.box-three {
+            background-color: magenta;
+            /* 1 radian = 57.2958deg */
+            transform: rotateZ(2rad);
+        }
+
+        div.box-four {
+            background-color: deepskyblue;
+            transform: rotateX(30deg) rotateY(30deg) rotateZ(30deg);
+        }
+
+        div.box-five {
+            background-color: lightsteelblue;
+            /* Investigate later */
+            /* transform: rotate3d(30deg, 30deg, 30deg); */
+        }
+    }
+
+    section.skew {
+        div.box-one {
+            background-color: orangered;
+            transform: skew(30deg, 30deg);
+        }
+
+        div.box-two {
+            background-color: green;
+            transform: skewX(30deg);
+        }
+
+        div.box-three {
+            background-color: blue;
+            transform: skewY(30deg);
+        }
+    }
+
+
+    /* When working with transformation of different types, order matters a lot in the visual representation to be acheived */
+    section.transform-order {
+        div.box-one {
+            background-color: orange;
+            transform: translateX(120px) rotate(45deg);
+        }
+
+        div.box-two {
+            background-color: yellowgreen;
+            transform: rotate(45deg) translateX(120px);
+        }
+    }
+
+    section.transform-origin {
+        div.box-one {
+            background-color: lightcoral;
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+
+        div.box-two {
+            background-color: yellow;
+            /* By default, the transform-origin is the center of the element. This property allows you to change that point to any other point on the element or even outside of it. */
+            transform-origin: top right;
+            transform: rotate(45deg);
+        }
+
+        div.box-three {
+            background-color: green;
+            transform-origin: bottom left;
+            transform: rotate(45deg);
+        }
+
+        div.box-four {
+            background-color: cyan;
+            transform-origin: bottom right;
+            transform: skew(30deg, 30deg);
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+main {
+    section.container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 10px;
+        grid-template-areas:
+            "header header header"
+            "left-aside article right-aside"
+            "footer footer footer";
+
+        & > * {
+            border: 1px dashed gray;
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+        }
+
+        aside.left-aside {
+            grid-area: left-aside;
+        }
+
+        aside.right-aside {
+            grid-area: right-aside;
+        }
+
+        article {
+            grid-area: article;
+        }
+
+        footer {
+            grid-area: footer;
+            border-top: 1px solid silver;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
