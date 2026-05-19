@@ -1,0 +1,161 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f8f3f3;
+  margin: 0px;
+}
+
+
+
+.wrapper{
+  width:100%;
+  max-width:1200px;
+  background:linear-gradient(to right,#b8cdf9,#c9acf5);
+  padding:40px;
+  border-radius:4px
+  
+}
+
+
+
+.card{
+  width:75%;
+  margin:auto;
+  display:flex;
+  border-radius:15px;
+  overflow:hidden;
+  background:white;
+  margin-top: 50px;
+}
+
+
+.left{
+  
+  background:
+  linear-gradient(rgba(104,0,170,0.55),
+  rgba(104,0,170,0.55)),
+  url("vikkibilan-nature-8339115_1920.jpg");
+
+  background-size:cover;
+  background-position:center;
+  min-height:200px;
+
+  color:white;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:40px 30px;
+}
+
+.left h2{
+  font-size:42px;
+  margin-bottom:10px;
+  font-weight:700;
+}
+
+.left p{
+  font-size:22px;
+  margin-bottom:40px;
+  font-weight:600;
+}
+
+.price{
+  font-size:45px;
+  font-weight:bold;
+  text-align:right;
+}
+
+.price span{
+  font-size:20px;
+  font-weight:normal;
+}
+
+/* this is right side */
+
+.right{
+  
+  padding:45px 40px;
+  background:white;
+}
+
+.right h1{
+  margin-bottom:30px;
+  color:#333;
+  font-size:38px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.input-group label{
+  margin-bottom:8px;
+  color:#666;
+  font-size:15px;
+}
+
+.input-group input{
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:5px;
+  font-size:15px;
+  outline:none;
+  
+}
+
+
+
+
+.terms{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:14px;
+  color:#666;
+  margin-top:5px;
+  
+}
+
+.terms a{
+  color:#6589f2;
+  text-decoration:none;
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+button{
+  width:140px;
+  padding:14px;
+  border:none;
+  border-radius:5px;
+  background-color: #6589f2;
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  
+}
+
+button:hover{
+  background:rgb(156, 156, 233)
+}
+
+
+
