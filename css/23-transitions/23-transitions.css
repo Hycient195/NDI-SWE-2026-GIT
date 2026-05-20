@@ -1,0 +1,81 @@
+:root {
+    --timing-function-distance: 600px;
+}
+
+main {
+    div.examples {
+        border: 1px dashed gray;
+    }
+
+    div[class*="box"] {
+        height: 120px;
+        width: 120px;
+        border: 1px solid silver;
+    }
+
+    hr {
+        margin-block: 40px;
+    }
+
+    section.intro {
+        div.box-one {
+            background-color: green;
+            opacity: 1;
+
+            /* transition: [property] [duration] [timing-function] [delay] */
+            transition:
+                background-color 1s ease-in 0s,
+                opacity 0.5s ease-out,
+                height 0.7s linear 0.3s;
+        }
+
+        div.box-one:hover {
+            background-color: yellow;
+            opacity: 0.5;
+            height: 160px;
+        }
+    }
+
+    /* Timing Functions */
+    section.timing-functions {
+        div.box-one {
+            background-color: pink;
+            transform: translateX(var(--timing-function-distance));
+            transition: transform 1s linear 1s;
+        }
+        div.box-two {
+            background-color: lightseagreen;
+            transform: translateX(var(--timing-function-distance));
+            transition: transform 1s ease-in 1s;
+        }
+        div.box-three {
+            background-color: lightcoral;
+            transform: translateX(var(--timing-function-distance));
+            transition: transform 1s ease-out 1s;
+
+            /* Complete form of the transition above */
+            /* transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            transition-delay: 1s; */
+        }
+        div.box-four {
+            background-color: orange;
+            transform: translateX(var(--timing-function-distance));
+            transition: transform 1s ease-in-out 1s;
+        }
+        div.box-five {
+            background-color: lightblue;
+            transform: translateX(var(--timing-function-distance));
+            transition: transform 1s ease 1s;
+        }
+    }
+
+    section.cubic-bezier {
+        div.box-one {
+            background-color: orangered;
+            transform: translateX(var(--timing-function-distance));
+            transition: transform 1s cubic-bezier(0.03, 0.5, 0.98, 0.56) 0s;
+        }
+    }
+}

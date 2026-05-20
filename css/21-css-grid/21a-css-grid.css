@@ -1,0 +1,80 @@
+main {
+    div.container {
+        border: 1px solid black;
+
+        div {
+            border: 1px solid orange;
+            padding: 10px;
+        }
+    }
+
+    section.intro {
+        div.container {
+            /* Initilize the layout as grid */
+            display: grid;
+            /* Specify the number of columns and the values of their widths */
+            grid-template-columns: 200px 250px 200px;
+        }
+    }
+
+    /* Fractional Units */
+    section.fractional {
+        div.container {
+            /* Initilize the layout as grid */
+            display: grid;
+            /* Specify the number of columns and the values of their widths in fractional units of their parent using the "fr" unit */
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            column-gap: 30px;
+            row-gap: 10px;
+            /* Shorthand syntax for row and column gaps */
+            /* gap: 10px 30px; */
+
+        }
+    }
+
+    /* Repeat Grid Columns */
+    section.repeat {
+        div.container {
+            display: grid;
+            /* This is used to repeat the number of columns for the specified number of times using the repeat() css function */
+            /* The below is used instead of `grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr` */
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+    /* Using Mixed responsive and static units */
+    section.mixed-values {
+        div.container {
+            display: grid;
+            grid-template-columns: 200px 2fr 1fr 300px;
+        }
+    }
+
+    /* Using Grid Template Rows */
+    section.grid-rows {
+        div.container {
+            display: grid;
+            grid-template-rows: 1fr 2fr 3fr 4fr;
+        }
+    }
+
+    /* Grid Columns and Rows combined */
+    /* Explicit columns and rows */
+    section.row-column {
+        div.container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-rows: 100px 2fr 3fr;
+        }
+    }
+
+    /* Grid auto rows */
+    section.auto-rows {
+        div.container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Specifies a minimum and maximum contraint for the grid rows. Auto meant no upper bound */
+            grid-auto-rows: minmax(100px, auto);
+        }
+    }
+}
