@@ -1,0 +1,10 @@
+main {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: "header header header"
+        "left-aside article right-aside"
+        "footer footer footer";
+
+    }
+}

@@ -1,0 +1,72 @@
+/*Reset Styling */
+body ul, ol, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    /* border: 1px dashed gray; */
+}
+
+body {
+    padding: 20px;
+
+     header{
+        /* background-color: blue; */
+        /* color: white; */
+
+        div.wrap {
+            max-width: 1120px;
+            margin-inline: auto;
+
+            h1{
+                padding-inline: 10px;
+                text-align: center;
+            }
+        }
+         
+        nav {
+            padding: 10px, 0;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                list-style-type: none;
+
+             li {
+                a {
+                    padding: 20px 12px;
+                    /* color: white; */
+                }
+             }
+            }
+        }
+     }
+
+     main {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        max-width: 1120px;
+        margin-inline: auto;
+        margin-top: 15px;
+        background: linear-gradient(rgb(174, 174, 245));
+
+        aside{
+            ul{
+                list-style-type: none;
+                li{
+                    padding: 12px 14px;
+                }
+            }
+        }
+     }
+
+     footer {
+        text-align: center;
+        padding: 15px;
+
+     }
+
+}
