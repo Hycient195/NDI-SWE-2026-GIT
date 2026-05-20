@@ -1,0 +1,1 @@
+console.log("This is a standalone JavaScript Executable.");
