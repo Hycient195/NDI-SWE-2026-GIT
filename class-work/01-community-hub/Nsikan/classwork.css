@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgb(234, 223, 210), rgb(249, 247, 245));
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+section.container {
+
+    /* HEADER  */
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        color: black;
+        padding: 2px 30px;
+        justify-content: space-between;
+        font-size: 18px;
+        align-items: center;
+        background-color: rgb(232, 237, 242);
+
+
+
+        div .logo {
+            font-size: 17px;
+            border-radius: 12px;
+
+
+            &:hover {
+                color: blue;
+                background-color: azure;
+            }
+        }
+
+
+
+    }
+
+    nav.navigation {
+
+
+
+        div {
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+
+
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        padding: 15px;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+
+
+
+    main {
+        /* display: flex; */
+        padding: 80px;
+        justify-content: space-between;
+        margin-top: 70px;
+
+        /* Left side */
+        div.content {
+            margin-bottom: 150px;
+            display: flex;
+
+            section.LeftText {
+                p.CourseDescription {
+                    color: brown;
+                    margin-top: 3px;
+                    line-height: 0.7;
+                    transform: translateY(-7px);
+                }
+
+                div.Learn {
+                    h1 {
+                        font-weight: 700;
+                        font-size: 50px;
+                        color: black
+                    }
+
+
+                }
+
+                p {
+                    font-size: 20px;
+                }
+
+                div.Buttons {
+                    display: flex;
+                    gap: 15px;
+                    margin-top: 20px;
+                    align-items: center;
+                    /* background-color: brown; */
+
+
+                    .primaryButton {
+                        background-color: brown;
+                        padding: 17px;
+                        border-radius: 12px;
+                        border: none;
+                        color: black;
+                        font-size: 16px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgb(205, 102, 102);
+                            color: white;
+                        }
+                    }
+
+                    .secondaryButton {
+                        /* background-color: brown; */
+                        padding: 15px;
+                        border-radius: 12px;
+                        color: black;
+                        font-size: 16px;
+                        border: 2px solid brown;
+                        background-color: rgb(236, 178, 178);
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgb(222, 124, 124);
+                            color: white;
+                        }
+
+                    }
+                }
+
+
+
+            }
+
+            /* Right section  */
+            aside {
+                border: 1px solid rgb(221, 214, 214);
+                border-radius: 15px;
+                /* display: flex; */
+                width: 300px;
+                /* height: max-content; */
+                text-align: left;
+                padding: 50px 30px;
+                transform: translateY(-10px);
+                background-color: rgb(244, 243, 242);
+                font-size: 12px;
+                max-width: 400px;
+                max-height: 500px;
+                max-height: 500px;
+                overflow: hidden;
+                /* min-width: 60%; */
+                justify-content: center;
+
+                p {
+
+                    text-align: left;
+                }
+
+                span {
+                    font-weight: bold;
+                    text-align: justify;
+                }
+            }
+
+
+
+
+        }
+
+    }
+}
+
+.secondSection {
+    div.topBox {
+        border: 1px solid rgb(234, 221, 221);
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 80px;
+        background-color: rgb(244, 242, 240);
+        padding: 30px;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        min-height: 400pxpx;
+
+        p.CourseDescription{
+            color: brown;
+        }
+    }
+
+    div.lowerBox {
+        /* display: flex;     */
+        border: 1px solid rgb(234, 221, 221);
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 80px;
+        background-color: rgb(244, 242, 240);
+        padding: 30px;
+        height: 300px;
+
+        div.innerBoxes {
+            display: flex;
+
+            div.innerBox {
+                width: 30%;
+                border: 1px solid rgb(201, 165, 165);
+                border-radius: 12px;
+                padding: 20px;
+                gap: 10px;
+                margin: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(222, 219, 215);
+                margin-bottom: 80px;
+            }
+
+
+        }
+    }
+}
+
+section.thirdSection{
+    margin-top: 90px;
+    div.wrapper{
+        p.LearningTracks{
+            color: brown;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        div.panels{
+            display: flex;
+            gap: 10px;
+
+            div.panel{
+                 width: 40%;
+                border: 1px solid rgb(201, 165, 165);
+                border-radius: 12px;
+                padding: 30px 50px 30px 50px;
+                gap: 10px;
+                margin: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(222, 219, 215);
+                margin-bottom: 80px;
+                overflow: hidden;
+
+                h3, p{
+                    align-items: center;
+                    justify-content: center;
+                    color: black;
+                }
+            }
+
+        }
+      }
+
+}
+
+/* next */
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERRIES for phone */
+@media screen and (max-width: 768px) {
+    body{
+        flex-direction: column;
+    }
+}
+
+
+
+/* MEDIA QUERRIES for tablet*/
+@media screen and (max-widths: 992px) {
+    .container {
+        gap: 10px;
+    }
+}
+
+/* MEDIA QUERRIES for laptops*/
+.container {
+    /* display: flex; */
+    gap: 20px;
+}
