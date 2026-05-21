@@ -62,7 +62,9 @@ console.log("Logical NOT:", !isSunny); /* Logical NOT: This is an inverse operat
 
 /** ============== Assignment Operators ============= */
 let c = 10;
-let d = 5;
+
+/* The "=" operator is the assignment operator used to assign a value to a variable */;
+let d = 5 
 
 c += d; /* Equivalent to c = c + d */
 console.log("Assignment +=", c);
@@ -81,6 +83,84 @@ console.log("Assignment %=", c);
 
 c **= d; /* Equivalent to c = c ** d */
 console.log("Assignment **=", c);
+
+
+
+/* ============ Bitwise Operators ============= */
+
+/* Bitwise AND: This is denoted by the "&" symbol */
+let k = 3;
+let l = 12;
+let result = k & l;
+console.log("Bitwise AND:", result);
+
+/* Bitwise OR: This is denoted by the "|" symbol */
+let m = 3;
+let n = 12;
+let result2 = m | n;
+console.log("Bitwise OR:", result2);
+
+/* Bitwise XOR: This is denoted by the "^" symbol */
+let o = 3;
+let p = 12;
+let result3 = o ^ p;
+console.log("Bitwise XOR:", result3);
+
+/* Bitwise NOT: This is denoted by the "~" symbol */
+let q = 3;
+let result4 = ~q;
+console.log("Bitwise NOT:", result4);
+
+/* Bitwise Left Shift: This is denoted by the "<<" symbol */
+let r = 3;
+let result5 = r << 2; /* This shifts the bits of r to the left by 2 positions */
+console.log("Bitwise Left Shift:", result5);
+
+/* Bitwise Right Shift: This is denoted by the ">>" symbol */
+let s = 12;
+let result6 = s >> 2; /* This shifts the bits of s to the right by 2 positions */
+console.log("Bitwise Right Shift:", result6);
+
+/* Bitwise Unsigned Right Shift: This is denoted by the ">>>" symbol */
+let t = -12;
+let result7 = t >>> 2; /* This shifts the bits of t to the right by 2 positions, filling with zeros from the left */
+console.log("Bitwise Unsigned Right Shift:", result7);
+
+/* Bitwise Zero Fill Right Shift: This is denoted by the ">>>" symbol */
+let u = -12;
+let result8 = u >>> 2; /* This shifts the bits of u to the right by 2 positions, filling with zeros from the left */
+console.log("Bitwise Zero Fill Right Shift:", result8);
+
+
+
+/* ============ Ternary Operators =========== */
+// condition ? (expression if code is true) : (expression if code is false)
+let age = 18;
+let isAdult = age >= 18 ? "Yes, you are an adult." : "No, you are not an adult.";
+console.log(isAdult);
+
+
+
+/* ============ Type Operators =========== */
+
+/* The "typeof" operator: This is used to determine the type of a variable */
+let score = 90;
+let typeOfScore = typeof score;
+console.log("Type of score:", typeOfScore);
+
+
+/* The "instanceof" operator: This is used to check if an object is an instance of a specific class or constructor function */
+let today = new Date()
+let typeOfToday = today instanceof Date /* This returns true because "today" is obtained from the Date type */
+console.log("Is today an instance of Date?", typeOfToday);
+
+let anotherTypeOfToday = today instanceof Map; /* This returns false because "today" is not obtained from the Map type */
+console.log("Is today an instance of Map?", anotherTypeOfToday);
+
+let jobs = ["Developer", "Designer", "Manager"];
+let typeOfJobs = jobs instanceof Array;
+console.log("Is jobs an instance of Array?", typeOfJobs);
+
 
 
 // Operator precedence: This refers to the order in which operators are evaluated in an expression.
