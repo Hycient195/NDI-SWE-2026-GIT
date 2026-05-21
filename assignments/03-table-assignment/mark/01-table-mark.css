@@ -3,22 +3,30 @@ section.table{
         border: 1px  rgb(46, 23, 23);
         border-radius: 8px;
         border-collapse: collapse;
-        background-color: rgb(25, 20, 62);
+        background-color: rgb(23, 21, 48);
         color: rgba(255, 255, 255, 0.686);
-        max-width: 1400px;
-        min-width: 1300px;
+        width: 1120px;
+        min-width: 1120px;
         width: 100%;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 12px;
+        font-family: sans-serif;
+        font-size: 13px;
         text-align: left;
         
         
 
         thead{
+           .topleft-one{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                font-size: 14px;
+                align-items: center;
+            }
             tr {
+                
                 border-top: 1px solid rgba(255, 255, 255, 0.196);
             th {
-                padding: 10px 10px 10px 5px;
+                padding: 10px 10px 10px 20px;
                 text-align: left;
                 }
             }
@@ -34,8 +42,13 @@ section.table{
                 border-radius: 7px;
                 padding:5px;
                 min-width: 180px;
-               
-                    }
+                }
+
+                .create-profile-button:hover{
+                    border-color: rgb(240, 236, 152);
+                }
+
+
 
             .cancel-search{
                 width:45px ; 
@@ -45,6 +58,12 @@ section.table{
                     padding:5px;
                     background-color:rgba(255, 228, 196, 0) ;     
                 }
+                .cancel-search:hover{
+                    background-color: aliceblue;
+                    color: black;
+                }
+
+            
 
             .rocket-icon{
                     width:45px ; 
@@ -55,27 +74,34 @@ section.table{
                     background-color:rgba(255, 228, 196, 0) ;   
                 }
 
+                 .rocket-icon:hover{
+                    background-color: aliceblue;
+                    color: black;
+                }
+
+
             #search-input{
-                    width: 1000px;
+                    width: 100%;
                     height: 30px;
-                    border: 20px;
+                    border: 1px solid white;
                     border-color: rgb(249, 249, 249);
                     color: rgb(255, 255, 255);
                     border-radius: 8px;
-                    background-color: rgba(255,255,255,0.1);
+                    background-color: rgba(255, 255, 255, 0.033);
                     
                 }
 
                     #search-input::placeholder{
                     border-radius: 10px;
                     color: rgba(255, 255, 255, 0.365);
-                    padding: 5px 20px;
-                    background-color:rgba(193, 179, 179, 0) ;
+                    padding: 10px 20px;
+                    /* background-color:rgba(193, 179, 179, 0); */
    
                 }
                 
             .header-row{
-                    background-color: rgba(255, 255, 255, 0.066);  
+                    background-color: rgba(255, 255, 255, 0.066); 
+                    color: rgba(255, 255, 255, 0.309); 
                     
                     
                       
@@ -85,36 +111,102 @@ section.table{
                 tr {
                 td {
                     border-top: 1px solid rgba(255, 255, 255, 0.186);
-                    padding: 10px 20px;
+                    /* padding: 20px 20px; */
                     color: rgba(243, 243, 246, 0.369);
+                    padding: 10px 10px 10px 20px;
+        
+                }
+                td:nth-child(1){
+                    color: white;
                 }
                 } 
                 .action-icon{
-                width:35px ; 
+                display: flex;
+                width:30px ; 
                 border-color: aliceblue;
                 color: rgb(255, 255, 255);
                 border-radius: 7px;
                 padding:5px;
-                background-color:rgba(255, 228, 196, 0) ;  
-
+                background-color:rgba(255, 228, 196, 0); 
+                justify-content: center;
             }
+
+            .action-icon:hover{
+                    background-color: aliceblue;
+                    color: black;
+                }
+
         }
         
-        .footer{
-            border-top: 1px solid rgba(255, 255, 255, 0.198);
-            padding:10px 10px; 
-            
-            .cancel-button{
+        tfoot{
+            border-top: 1px solid rgba(255, 255, 255, 0.198); 
+            width: 100%;
+        
+
+            td{
+                padding: 20px;
+            }
+
+            .buttons-container{
+                display: flex;
+                gap: 20px;
+
+
+                .cancel-button{
+                display: flex;
+                justify-content: center;
                 width:70px ; 
                 border-color: aliceblue;
                 color: rgb(255, 255, 255);
                 border-radius: 7px;
-                padding:5px;
-                background-color:rgba(255, 228, 196, 0) ;  
+                padding:10px;
+                background-color:rgba(255, 228, 196, 0);
+
             }
 
+            .prev-next-buttons-container{
+                display: flex;
+                align-items: center;
+                gap: 10px;
 
 
+                .prev-button{
+                    display: flex;
+                    border-radius: 7px;
+                    width:70px; 
+                    align-items: center;
+                    border-color: aliceblue;
+                    color: rgb(255, 255, 255);
+                    padding:10px;
+                    background-color:rgba(255, 228, 196, 0);
+                }
+
+                .prev-button:hover{
+                    background-color: aliceblue;
+                    color: black;
+                }
+
+                .next-button{
+                    display: flex;
+                    border-radius: 7px;
+                    width:70px; 
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    border-color: aliceblue;
+                    color: rgb(255, 255, 255);
+                    padding:10px;
+                    background-color:rgba(255, 228, 196, 0);
+                }
+                .next-button:hover{
+                    background-color: aliceblue;
+                    color: black;
+                }
+
+                
+            }
+             
+            }
 
         }
             
