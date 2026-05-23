@@ -1,15 +1,45 @@
-section>.table{
-    background-image: linear-gradient(90deg, blue, purple );
+*{
+    border: 0;
+    margin: 0;
+}
+
+
+section>table{
+    background-image: linear-gradient(90deg, rgb(25, 0, 255), purple );
     color: white;
-    /* padding: 10px 10px; */
-    width: 700px;
-    height: 300px;
+    max-width: 700px;
+    width: 100%;
+    min-width: 400px;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
  thead{
-    background-color: rgba(255, 255, 255, 0.234);
-    border: none;
-    margin: none;
+    background-color: rgba(255, 255, 255, 0.339);
+    th{
+        text-align: left;
+        padding: 10px;
+        
+    }
+
+     th:hover{
+        background-color: rgb(245, 99, 243);
+    }
+
  }
+
 tbody{
-    padding: 10px 10px;
+    td{
+         padding: 10px;
+    }
+    
+    td:hover{
+    background-color: rgba(255, 255, 255, 0.293);
+    }
+
+    tr:hover{
+    background-color: rgba(255, 255, 255, 0.293);
+}
 }
