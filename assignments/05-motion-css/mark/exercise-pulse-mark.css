@@ -1,0 +1,44 @@
+/* Reset styles  */
+body{
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(6);
+    }
+}
+
+div.container{
+    div.bigCircle{
+    border: 2px solid rgb(255, 0, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    animation:pulse 1.6s infinite ;
+}
+div.smallCircle{
+        background-color: rgb(255, 0, 0);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: auto;
+        transform: translateY(-30px);
+    }
+    
+}
+
