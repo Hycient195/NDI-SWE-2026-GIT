@@ -6,10 +6,13 @@
  * 
  */
 
-const a = process.argv[2];
-const b = process.argv[3];
+// Argument Vector
 
-console.log("Result is ", (a + b))
+/* Input from our terminal are coerced from strings to number for them to be used for arithimetic operations */
+const a = Number(process.argv[2]);
+const b = Number(process.argv[3]);
+
+console.log("Result is ", (a + b));
 
 
 // console.log(process.argv)

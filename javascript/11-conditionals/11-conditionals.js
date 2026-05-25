@@ -7,10 +7,3 @@
 
 Let's go through each of these with examples.
 */
-
-/***************** 1. if statement *****************/
-let age = 18;
-
-if (condition == true) {
-    
-}
