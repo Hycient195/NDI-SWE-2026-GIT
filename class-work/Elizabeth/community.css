@@ -198,7 +198,7 @@ main {
 
 }
 
-.event{
+.event {
     padding: var(--base-padding);
 
     div.wrapper {
@@ -276,7 +276,7 @@ main {
             background-color:white;
             border:1px solid rgb(217, 197, 184);
             flex: 2;
-            padding: 15px;
+            padding: 20px;
             border-radius: 15px;
 
             h3 {
@@ -297,24 +297,16 @@ main {
     
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     main {
         width: 100%;
-    }
-
-    .hero{
-        flex-direction: column;
     }
 
     .wrap {
         flex-direction: column;
         width: 100%;
     }
-
-    .wrapper  {
-        width: 100%;
-    }
-
+    
     
 }
 
