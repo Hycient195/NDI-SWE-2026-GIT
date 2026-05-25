@@ -1,0 +1,341 @@
+body {
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Stepped Animations */
+@keyframes float {
+  0% {
+    transform: translateY(-60px);
+  }
+
+  5% {
+    transform: 10px;
+  }
+
+  /* falling fast then hitting ground */
+  10% {
+    transform: translateY(100px);
+  }
+
+  /* rebound (smaller, natural bounce) */
+  50% {
+    transform: translateY(-60px);
+  }
+
+  /* coming back down */
+  60% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes reel {
+  0% {
+    background-position: top left;
+  }
+
+  25% {
+    background-position: center;
+  }
+
+  50% {
+    background-position: bottom;
+  }
+
+  75% {
+    background-position: center;
+  }
+
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes load {
+  to {
+    transform: scaleX(20);
+  }
+
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1.09);
+  }
+
+}
+
+@keyframes padGrow {
+  from {
+    padding: 2px;
+  }
+
+  to {
+    padding: 6px;
+  }
+}
+
+
+/* animations */
+@keyframes hide1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hide2 {
+
+  0%,
+  70% {
+    opacity: 1;
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+/* ////////////////////////////////////////// */
+/* BOUNCING CIRCLE */
+
+
+main {
+
+  margin: 80px;
+
+  h1 {
+    color: black;
+  }
+
+  div.Circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div.bouncingCircle {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+      animation: float 2.7s ease-out 0s infinite;
+
+    }
+
+  }
+
+  /* ANIMATION2 */
+  section.home {
+    margin-top: 200px;
+
+    div.homeContainer {
+
+      h5 {
+        justify-content: center;
+        color: black;
+      }
+
+      div.homeAnimation {
+
+        width: 5px;
+        height: 5px;
+        max-width: 100px;
+        background-color: rgb(161, 66, 66);
+
+        transform: scaleX(0);
+        transform-origin: left;
+
+        animation: load 1.5s linear forwards infinite;
+      }
+    }
+
+  }
+
+  /* SPINNER */
+
+  section.spinner {
+    margin-top: 200px;
+
+    div.spinnerWheel {
+
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+
+      background: conic-gradient(blue 0deg 290deg,
+          transparent 290deg 360deg);
+      animation: spin 1s linear infinite 0s;
+
+      -webkit-mask:
+        radial-gradient(transparent 55%,
+          white 56%)
+    }
+
+  }
+
+  section.conic {
+    div.maskingConic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(black 0deg 300deg,
+          transparent 300deg 360deg);
+
+      mask: radial-gradient(transparent 56%, white 55%);
+
+      animation: spin 1s linear infinite 0s;
+
+    }
+  }
+
+  section.hoverCard {
+    div.hoverOn {
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      border-radius: 12px;
+      text-align: left;
+      transition: padding 0.3sec ease;
+
+
+      .HoverText {
+        h5 {
+          color: black;
+          transform: translateY(-10px);
+          padding: 20px;
+          font-weight: 100;
+
+        }
+      }
+
+      &:hover {
+
+        /* background-color: blue; */
+        /* padding: 10px; */
+        animation: grow 1s ease-in-out infinite, padGrow 1s ease-in-out infinite normal;
+
+      }
+    }
+  }
+
+  section.linearBox {
+    div.linear {
+      width: 400px;
+      height: 200px;
+      background: linear-gradient(to bottom right, rgb(131, 71, 215), rgb(112, 226, 226));
+      background-size: 600% 600%;
+      border-radius: 12px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      animation: reel 2s ease-in-out infinite 0s;
+
+
+      p {
+        color: white;
+        transform: translateX(-100px);
+        animation: bounce 1.7s ease infinite 0s;
+
+      }
+
+      .button {
+        padding: 10px 25px 10px 25px;
+        /* transform: translateY(40px); */
+        border-radius: 20px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+
+
+      }
+    }
+  }
+
+  /* Multiplecolor slide box */
+  .multiBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    p {
+      text-align: center;
+      transform: translateY(70px);
+      color: white;
+    }
+
+
+    .stack {
+      position: relative;
+      width: 400px;
+      height: 200px;
+    }
+
+
+    .card {
+      position: absolute;
+      inset: 0;
+
+      /* border-radius: 20px; */
+    }
+
+    /* Top card */
+    .card1 {
+      background: red;
+      z-index: 3;
+      animation: hide1 1s infinite 0s;
+    }
+
+    /* Middle card */
+    .card2 {
+      background: blue;
+      z-index: 2;
+      animation: hide2 6s infinite;
+    }
+
+    /* Bottom card */
+    .card3 {
+      background: green;
+      z-index: 1;
+
+    }
+  }
+}
