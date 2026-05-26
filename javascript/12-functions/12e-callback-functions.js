@@ -29,6 +29,8 @@ add(3, 4, alertUserAfterConversion)
 
 
 /* ===================================================== */
+
+/* Caller Function */
 function add(a, b, callback) {
     const sum = (a + b);
 
@@ -37,8 +39,22 @@ function add(a, b, callback) {
     callback(sum)
 }
 
-function alertUserAfterConversion(sum) {
+/* Callback Function: This is a named callback function */
+function alertUserAfterAddition(sum) {
     console.log("Addition complete, sum is", sum);
 }
 
-add(3, 4, alertUserAfterConversion)
+add(3, 4, alertUserAfterAddition)
+
+
+
+
+/* For further reading */
+
+// Immediately Invoked Function Expressions
+// Recursive Functions
+// Higher Order Functions
+// Constructur functions and "this" keyword
+// Function Hoisting
+// Function Currying
+// One line arrow functions
