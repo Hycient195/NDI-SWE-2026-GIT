@@ -1,0 +1,51 @@
+/* Reset styles  */
+body,
+h1, h2, h3, h4, h5, h6, ul, li, ol {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Animation Keyframes */
+@keyframes hovercard {
+    0%{
+        transform: scale(1);
+    }
+     100% {
+        transform: scale(1.1);
+    }
+}
+@keyframes phover {
+    0%{
+        transform: translate(10px,  10px);
+    }
+     100% {
+        transform: translateXY(20px, 20px);
+    }
+}
+
+body{
+    background-color: rgb(229, 229, 236);
+}
+
+
+div{
+border: 2px solid black;
+width: 300px;
+height: 180px;
+margin: auto;
+margin-top: 50px;
+padding: 30px;
+border-radius: 30px;
+background-color: white;
+animation: hovercard 0.7s alternate-reverse infinite 0s;
+
+
+p{
+    animation: phover 0.7s alternate-reverse infinite 0s;
+}
+}

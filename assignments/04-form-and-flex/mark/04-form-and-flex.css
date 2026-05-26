@@ -1,0 +1,117 @@
+
+/* Resetting the default styles of all elements to ensure consistency
+ across different browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background color */
+body {
+    background-color: rgb(175, 178, 251);
+    
+
+    section{
+        div.container{
+            display: flex;
+            color: rgb(88, 84, 84);
+            min-width: 400px;
+            max-width: 600px;
+            height: 60vh;
+            margin: auto;
+           margin-top: 40px;
+           border-radius: 10px;
+           background-color: white;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+
+
+            div.leftside{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;  
+                background: linear-gradient(
+                    rgba(43, 12, 110, 0.634), 
+                    rgb(76, 11, 145)), 
+                    url(photo-of-mark.jpg);
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px 0px 0px 10px ;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                gap: 10px;
+                /* flex-shrink: 3; */
+                
+                p.one{
+                    display: flex;
+                    text-align: right;
+                    justify-content: flex-start;
+                }
+                 p.two{
+                    display: flex;
+                    text-align: right;
+                    justify-content: flex-end;
+                    font-size: 22px;
+                }
+
+
+
+            }
+
+
+            div.rightside{
+                padding: 30px;
+                width: 300px;
+                flex-shrink: 0;
+
+                h1{
+                    color: black;
+                    font-size: 20px;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .inputs{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        label{
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        input{
+                            height: 30px;
+                            
+                            border-radius: 5px;
+                            border-color: rgba(67, 64, 64, 0.146);
+                        }
+                    }
+                    div.form-footer{
+                        display: flex;
+                            flex-direction: row;
+                            font-size: 16px;
+                            align-items: flex-start;
+                            gap: 10px;
+                    }
+                    button{
+                        width: 100px;
+                        padding: 8px;
+                        border-radius: 5px;
+                        border-color: transparent;
+                        background-color: rgb(46, 84, 223);
+                        color: white;
+                        font-size: 10px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+    
+}
