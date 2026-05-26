@@ -1,0 +1,37 @@
+/* Reset styles  */
+body,
+h1, h2, h3, h4, h5, h6, ul, li, ol {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes underline{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 150px;
+
+    }
+}
+
+
+div.container{
+width: 300px;
+height: 180px;
+margin: auto;
+margin-top: 200px;
+padding: 30px;
+background-color: white;
+
+div.underline{
+    height: 10px;
+    background-color: red;
+    border: 1px solid rgba(0, 0, 0, 0);
+    animation: underline 1.3s ease-in-out infinite 0s;
+}
+}

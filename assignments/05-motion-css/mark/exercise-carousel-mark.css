@@ -1,0 +1,36 @@
+/* Reset styles  */
+body{
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+@keyframes carousel {
+    0%{
+        background-color: red;
+        }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+
+body{
+    background-color: red;
+    animation: carousel 3s ease-in-out infinite 0s;
+}
+
+main{
+    div.container{
+    color: white;
+    
+}
+
+}
