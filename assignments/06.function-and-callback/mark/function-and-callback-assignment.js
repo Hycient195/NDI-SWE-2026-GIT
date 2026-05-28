@@ -12,21 +12,21 @@
 // const additionResult = add(multiplicationResult,32);
 // console.log(celsiusDeg, "in Celsius is", additionResult, "in Farenheit");
 
-const celsiusDeg = 68;
-function multiply(a, b){
-    return a * b;
+const celsiusDeg = 56;
+function calc(a, callback){
+    const result = ((a * 1.8)+32);
+    callback(result);
 }
+function tempConversion(result){
+    console.log(celsiusDeg, "in Celsius is", result, "in Farenheit");
 
-function add(a, b){
-    return a + b;
+// const tempConverter = function(result){
+//     console.log(celsiusDeg, "in Celsius is", result, "in Farenheit");
+
+// const tempConverter = (result)=>{
+//     console.log(celsiusDeg, "in Celsius is", result, "in Farenheit");    
+
 }
+calc(celsiusDeg, tempConversion )
 
-function tempConversion(celsius, multiplier, callback) {
-    const multiplicationResult = multiply(celsius, multiplier);
-    const additionResult = add(multiplicationResult, 32);
-    callback(additionResult);
-}
 
-tempConversion(celsiusDeg, 1.8, function(fahrenheit) {
-    console.log(celsiusDeg, "in Celsius is", fahrenheit, "in Fahrenheit");
-});
