@@ -1,13 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
 main {
-    background: linear-gradient( #6dbdf1f2, #b26fe9);
+    background: linear-gradient(135deg, #6dbdf1f2, #b26fe9);
     display: flex;
     justify-content: center;
+    padding: 15px;
     align-items: center;
     height: 100vh;
-    /* padding: 0; */
-    /* margin: 0; */
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+   
 
 .container {
        display: flex;
@@ -25,21 +37,26 @@ main {
     background: url(./music\ image.jpg) no-repeat center/cover;
     position: relative;
     padding: 40px;
-    /* background-color: rgb(216, 86, 184); */
-    /* min-height: 300px; */
-    /* min-width: 200px; */
+   
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(206, 110, 203, 0.459)) rgba(134, 8, 134, 0.4);
 }
 
 .overlay {
     color: white;
-    /* background: rgba(98, 0, 234, 0.7); */
     height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    
-    
+    justify-content: flex-end;  
    
 }
 
@@ -72,10 +89,41 @@ input[type="checkbox"] {
 
 .Register {
     background-color: rgb(62, 17, 168);
-    color: whitesmoke;
+    color: white;
     padding: 10px 20px;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
     display: block;
     /* margin-bottom: 15px; */
 }
+
+@media screen and (max-width: 600px) {
+    .bg {
+        display: none;
+    }
+}
+
+.h1 {
+    font-size: 10px;
+    margin-bottom: 10px;
+
+}
+
+p {
+    font-size:20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 20px;
+
+    span{
+        font-size: 15px;
+        padding: 4px;
+        font-weight: 100;
+    }
+}
+
+
+

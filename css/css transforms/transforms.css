@@ -1,0 +1,84 @@
+main{
+    div.examples{
+        border: 1px dashed gray;
+    }
+
+    
+}
+/* Reset Styles */
+body,ol, ul, h1, h2, aside, article {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  /* padding: 20px; */
+}
+
+main {
+  section {
+    border: 1px dashed gray;
+  }
+  div[class*="box"] {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+  }
+
+  hr {
+    margin-block: 40px;
+  }
+
+  section.transform-x {
+    div.box-1 {
+      background-color: blueviolet;
+      transform: translateX(50px);
+    }
+
+    div.box-2 {
+      background-color: red;
+      transform: translateX(100%);
+    }
+  }
+
+  section.transform-y {
+    div.box-1 {
+      background-color: pink;
+      transform: translateY(50px);
+    }
+
+    div.box-2 {
+      background-color: greenyellow;
+      transform: translatey(-90%);
+    }
+  }
+
+  section.transform-xy {
+    div.box-1 {
+      background-color: yellow;
+      transform: translate(30px, 30px);
+    }
+
+    div.box-2 {
+      background-color: goldenrod;
+      transform: translate(30%, 30%);
+    }
+  }
+
+section.scaling {
+    div.box-1 {
+      background-color: turquoise;
+      transform: scale(0.5);
+    }
+    div.box-2 {
+        background-color: mediumpurple;
+        transform: scalex(1.9);
+    }
+    div.box-3 {
+        background-color: burlywood;
+        transform: scaley(1);
+    }
+
+  }
+}

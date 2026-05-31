@@ -1,0 +1,20 @@
+main {
+    div.container{
+        border: 1px solid black;
+
+        div{
+            border: 1px solid orange;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 200px, 150px, 250px;
+        }
+   
+    }
+    
+    .intro{
+        div.container{
+            display: grid;
+            grid-template-columns: 200px, 100px, 250px;
+        }
+    }
+}

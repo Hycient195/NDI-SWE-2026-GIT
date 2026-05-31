@@ -1,0 +1,316 @@
+/* Reset Style*/
+body, h1, h2, h3, h4, p, ul, ol, li {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Design System */
+:root {
+    --primary-color: brown;
+    --primary-color-dark: rgb(92, 15, 15);
+    --bg: linear-gradient(135deg, #f4ece4f1, rgb(242, 239, 234));
+    --container-max-width: 1120px;
+    --base-padding:16px
+   
+}
+
+
+body {
+
+    button {
+        padding: 10px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        background: white;
+        border: 1px solid var(--primary-color)
+        
+        
+         
+    }
+ 
+    
+    header {
+        border-bottom: 1px solid rgb(246, 229, 207);
+        padding: 14px 16px;
+        background-color: white;
+
+        nav {
+            display: flex;
+            justify-content: center;
+
+            div.wrap {
+                width: 100%;
+                max-width: var(--container-max-width);
+                justify-content: space-between;
+                align-items: center;
+                /* padding: 6px 10px; */
+                display: flex;
+                gap: 10px;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    font-size: 13px;
+                    
+                    
+                    li{
+                        padding: 10px 14px;
+                    
+                       a {
+                        text-decoration: none;
+                        color: black;
+
+                       } 
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+main {
+    background: var(--bg);
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: clamp(600px, 80vh, 850px);
+        padding: var(--base-padding);
+
+        div.wrap {
+            max-width: var(--container-max-width);
+            width: 100%;
+            display: flex;
+            gap: 20px;
+
+             & > div {
+                flex-basis: 200px;
+            }
+       
+       div.left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-grow: 3;
+
+         .title {
+            font-size: 16px;
+            color: var(--primary-color-dark);
+         }
+
+        h1{
+           font-size: clamp(25px, 4vw, 52px);
+           /* max-width: 600px; */
+        }
+         
+        p {
+          font-size: 14px;
+          color: rgba(21, 21, 21, 0.858);
+        }
+       
+        .button-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        button:nth-child(1) {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        button:nth-child(2) {
+            color: var(--primary-color);
+        }
+    }
+         
+        div.right {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: clamp(24px, 2vw, 30px);
+            gap: 15px;
+            border-radius: 20px;
+            border: 1px solid rgb(217, 197, 184);
+
+            h3 {
+                font: size 24px;
+            }
+       
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                
+            
+                li{
+                    font-size: clamp(12px, 1.5vh, 16px); 
+                }
+            }
+        }
+      }   
+    }
+  } 
+
+.attend {
+    padding: var(--base-padding);
+
+    .wrapper {
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+
+    div.card {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: clamp(24px, 3vw, 30px);
+            gap: 15px;
+            border-radius: 20px;
+            border: 1px solid rgb(217, 197, 184);
+
+            h5 {
+                font-size: 10px;
+                color: var(--primary-color-dark);
+            }
+
+            h2 {
+                font-size: clamp(20px, 2vw, 35px);
+            }
+
+            p {
+                font-size: 14px;
+            }
+      }
+
+    }
+
+}
+
+.event {
+    padding: var(--base-padding);
+
+    div.wrapper {
+        max-width: var(--container-max-width);
+        margin-inline: auto;
+        
+
+        .cards {
+            padding: clamp(24px, 2vw, 30px);
+            border-radius: 20px;
+            border: 1px solid  rgb(217, 197, 184);
+            background-color: white;
+
+            h2{
+                font-size: clamp(30px, 2vw, 35px);
+            }
+
+            p {
+                font-size: 14px;
+            }
+            .metrics {
+                display: flex;
+                gap: 15px;
+                margin-top: 20px;
+
+                .metric {
+                    background-color: rgb(248, 237, 231);
+                    border-radius: 10px;
+                    padding: 20px;
+                    border: 1px solid rgb(217, 197, 184);
+                    flex-grow: 2;
+                    min-width: 200px;
+
+                    h3{
+                        font-size: clamp(30px, 2vw, 35px);
+                    }
+
+                    p{
+                        font-size: 15px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.tracks{
+    padding: var(--base-padding);
+    /* margin-bottom: 100px; */
+
+    .wrapper{
+        max-width: var(--container-max-width);
+        margin-inline: auto;
+
+        h4 {
+        font-size: 14px;
+        color: var(--primary-color-dark);
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: clamp(20px, 3vw, 30px);
+    }
+
+    .boxes {
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 15px;
+        
+
+        .box{
+            background-color:white;
+            border:1px solid rgb(217, 197, 184);
+            flex: 2;
+            padding: 20px;
+            border-radius: 15px;
+
+            h3 {
+                font-size: 15px;
+                padding: 10px;
+                font-weight: 500;
+            }
+
+            p{
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+ }    
+    
+}
+
+@media screen and (max-width:800px) {
+    main {
+        width: 100%;
+    }
+
+    .wrap {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+}
+
+
+  
+
+
