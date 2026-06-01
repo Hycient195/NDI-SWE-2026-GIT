@@ -22,7 +22,6 @@ console.log(maskEmail('chidiebube@yahoo.com'));
 
 
 
-
 /**
  * ## Question 2
 Write a function that takes in a string and forms it into a url using template literal
@@ -37,8 +36,6 @@ function inputUrl(domain) {
 
 // Check the function
 console.log(inputUrl('google')); 
-
-
 
 
 
