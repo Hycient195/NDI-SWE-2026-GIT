@@ -13,8 +13,8 @@
 // console.log(celsiusDeg, "in Celsius is", additionResult, "in Farenheit");
 
 function calc(tempInput, callback){
-    const result = ((celsiusDeg * 1.8)+32);
-    callback(result);
+    const result = ((tempInput * 1.8)+32);
+    callback(tempInput, result);
 }
 function tempConversion(tempInput, result){
     console.log(tempInput, "in Celsius is", result, "in Farenheit");
@@ -26,6 +26,6 @@ function tempConversion(tempInput, result){
 //     console.log(celsiusDeg, "in Celsius is", result, "in Farenheit");    
 
 }
-calc(tempInput, tempConversion )
+calc(52, tempConversion )
 
 
