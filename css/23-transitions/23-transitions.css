@@ -26,7 +26,7 @@ main {
             transition:
                 background-color 1s ease-in 0s,
                 opacity 0.5s ease-out,
-                height 0.7s linear 0.3s;
+                height 0.7s linear 0.3s; 
         }
 
         div.box-one:hover {
