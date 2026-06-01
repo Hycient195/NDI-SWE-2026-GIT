@@ -5,10 +5,12 @@ const text = "Javascript";
 const extract = text.slice(0, 4);
 const scriptText = text.slice(4, 10);
 const negString = text.slice(-3)
+const stringEnd = text.slice(4)
 
 console.log(extract);
 console.log(scriptText);
 console.log(negString);
+console.log(stringEnd)
 
 
 
