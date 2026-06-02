@@ -10,10 +10,16 @@ Example jamessmith@gmail.com -> jame******@gmail.com
 function maskEmail(email) {
     // Split the email into username and domain parts
     const [username, domainName] = email.split('@');
-    // Mask the username by keeping the first 4 characters and replacing the rest with asterisks
-    const maskedUsername = username.slice(0, 4) + '*'.repeat(username.length - 4);
+
+    // Mask the username by keeping the first 4 characters and replacing the rest with asterisks (Using repeat to create the masked username)
+    // const maskedUsername = username.slice(0, 4) + '*'.repeat(username.length - 4);
+
+    // Using padEnd to create the masked username
+    const maskedUsername2 = username.slice(0, 4).padEnd(username.length, '*')
+
     // Return the masked email using template literals
-    return `${maskedUsername}@${domainName}`;
+    return `${maskedUsername2}@${domainName}`;
+
 }
 
 // Check the function
