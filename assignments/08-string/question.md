@@ -15,3 +15,9 @@ Example
     "gracejones@gmail.com" -> true;
     "grace@gmailcom" -> false
     "gracegmail.com" -> false
+
+## Question 4
+Study about the .localCompare() string method
+
+
+>> control flow statement, "break", "continue" and "return" keywords in loops
