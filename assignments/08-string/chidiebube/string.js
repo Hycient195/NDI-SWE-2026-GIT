@@ -56,11 +56,7 @@ Example
  */
 
 function isValidEmail(email) {
-    // Split the email into username and domain parts using array destructuring
-    const [username, EmailDomain] = email.split('@');
-    // Using double negation to convert the expression into a boolean value
-    return !!(EmailDomain && EmailDomain.includes('.'));
-
+    return email.includes('@') && email.includes('.');
 }
 
 // check the function
