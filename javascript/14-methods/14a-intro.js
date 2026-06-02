@@ -11,7 +11,7 @@
 const user = {
     name: "John Smith",
     age: 45,
-    // syntax 1 : Method syntsx
+    // syntax 1 : Method syntax
     greetUser() {
         console.log("Welcome User")
     },
