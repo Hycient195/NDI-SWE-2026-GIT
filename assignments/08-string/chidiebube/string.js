@@ -52,14 +52,24 @@ Example
 function isValidEmail(email) {
     // Split the email into username and domain parts
     const [username, EmailDomain] = email.split('@');
-    // Check if the email contains exactly one "@" symbol and if the domain part contains a dot
-    if (EmailDomain && EmailDomain.includes('.')) {
-        // If the email is valid, return true
-        return true;
-    } else {
-        // If the email is invalid, return false
-        return false;
-    }
+
+
+    // Check if the email has a valid domain part that contains a dot
+    // if (EmailDomain && EmailDomain.includes('.')) {
+    //     // If the email is valid, return true
+    //     return true;
+    // } else {
+    //     // If the email is invalid, return false
+    //     return false;
+    // }
+
+
+    // Using a ternary operator to check the validity of the email
+    // return (EmailDomain && EmailDomain.includes('.')) ? true : false;
+
+    // Using double negation to convert the expression into a boolean value
+    return !!(EmailDomain && EmailDomain.includes('.'));
+
 }
 
 // check the function
