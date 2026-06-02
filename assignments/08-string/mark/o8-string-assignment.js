@@ -1,12 +1,12 @@
 // QUESTION ONE
 const maskEmail = function theMask (email){
     const visible = email.slice(0, 4);
-    const visible2 =  email.slice(-10);
-    const asterixLength = (email.length - 15);
-    return visible + "*".repeat(asterixLength) + visible2;
+    const visible2 = email.slice(-10)
+    const asterixLength = (email.length -4);
+    return visible + "*".repeat(10) + visible2
 }
 
-console.log(maskEmail("Abujatravels@gmail.com"));
+console.log(maskEmail("Abujatrahhsjhjsjvels@gmail.com"));
 
 
 
@@ -17,6 +17,13 @@ function WebLink(input){
 }
 console.log(WebLink("amazon"));
     
+
+//QUESTION THREE
+
+function verifyMail(emailInput){
+    return 
+}
+
 
 
             
