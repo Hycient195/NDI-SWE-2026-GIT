@@ -79,12 +79,14 @@ console.log("Highest number is", highestNumber);
             and assign a value of empty array [] after that push name "John" as a string value into 
             he array of proerty "analyst" and return the acc object for the next cycle
     
+
     At cycle 2 : acc = { 
             analyst: ["James"]
         }, curr = { name: "Alice", role: "developer" }
         - check if role "developer" does not exists in the acc object ? no -> create property "developer"
             and assign a value of empty array [] after that, push the name "Alice" as a string into the
             empty array of property "developer" and return the acc object for the next cycle
+
 
     At cycle 3 : acc = { 
             analyst: ["James"],
@@ -95,6 +97,7 @@ console.log("Highest number is", highestNumber);
             string into the existing array of property "developer" and return the acc object for the next
             cycle
 
+
     At cycle 4 : acc = {
             analyst: ["James"],
             developer: ["Alice", "Samuel"],
@@ -104,6 +107,7 @@ console.log("Highest number is", highestNumber);
             and assign a value of an empty array []. After that, push the name "Jagun" as a string into it,
             and return the acc object for the next cycle
     
+
     At cycle 5 : acc = {
             analyst: ["James"],
             developer: "Alice", "Samuel",
@@ -113,6 +117,7 @@ console.log("Highest number is", highestNumber);
         - check if role "analyst" does not exist in the acc object ? yes -> push name "Ireti" as a string
             into the existing array of property "analyst", and return the acc object for the next cycle
 
+            
     At cycle 6: acc = {
             analyst: ["James", "Ireti"],
             developer: "Alice", "Samuel",
