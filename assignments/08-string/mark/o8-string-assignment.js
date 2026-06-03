@@ -21,9 +21,9 @@ console.log(WebLink("amazon"));
 //QUESTION THREE
 
 function verifyMail(emailInput){
-    return 
+    return emailInput.includes("@", ".com"); 
 }
-
+console.log(verifyMail("abelmonday@gmail.com"))
 
 
             
