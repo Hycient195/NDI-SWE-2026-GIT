@@ -2,11 +2,11 @@
 const maskEmail = function theMask (email){
     const visible = email.slice(0, 4);
     const visible2 = email.slice(-10)
-    const asterixLength = (email.length -4);
-    return visible + "*".repeat(10) + visible2
+    const asterixLength = (email.length -14);
+    return visible + "*".repeat(asterixLength) + visible2
 }
 
-console.log(maskEmail("Abujatrahhsjhjsjvels@gmail.com"));
+console.log(maskEmail("miesinteiosaisai@gmail.com"));
 
 
 
