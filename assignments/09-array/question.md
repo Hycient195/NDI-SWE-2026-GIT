@@ -17,3 +17,9 @@ input (array) -> output (object)
 >> object signature sample
 >>    input -> [3, 5, 6, 7, 3, 4, 8, 3, 4]
 >>    output ->  { number: 3, occourence: 5, number: 2, occourence: 7, number: 7, occourence: 1 }
+
+
+## Question 3
+Write a function that checks if a word is exactly the same when spelt forward and backwards
+
+sample: rever === rever -> true
