@@ -1,0 +1,441 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p, a, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* Design systems */
+:root {
+    --darkclay: rgb(233, 233, 220);
+    --lightclay: rgb(255, 255, 255);
+    --border: 1.5px solid rgb(227, 227, 213);
+    --brown:brown;
+    --background: linear-gradient(145deg,
+    rgb(242, 241, 226),
+    rgb(255, 255, 255));
+}
+
+body {
+background: var(--background);
+background-attachment: fixed;
+width: 100%;
+min-height: 100vh;
+font-family: 'inter';
+
+    header {
+        border-bottom: var(--border);
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+
+        nav {
+            div.wrapper {
+                width: 100%;
+                display: flex;
+                justify-content:space-between ;
+                margin: auto;
+                max-width: 1120px;
+                padding: 20px;
+                
+                    div.left-nav{
+                        font-weight: 700;
+                    }
+                    ul.links {
+                        display: flex;
+                        list-style: none;
+                        font-size: 12px;
+                        font-weight: 700;
+
+                    li > a {
+                        text-decoration-line: none;
+                        padding: 20px;
+                        color: black;
+                    }
+                
+                }
+                
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding-top: 50px;
+        
+        section.hero {
+            max-width: 1120px;
+            width: 100%;
+            margin: auto;
+            
+            div.wrapper {
+                display: flex;
+                padding: 50px 20px;
+                margin: auto;
+                width: 100%;
+                gap: 20px;
+               
+                div.left{
+                    line-height: 40px;
+                    flex-grow: 5;
+                    width: 100%;
+
+                    p.above-heading{
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--brown);
+                    }
+
+                    h1{
+                        font-size: clamp(24px, 4.8vw, 70px);
+                        line-height: 60px;
+                    }
+                    p.below-heading{
+                         font-size: 13px;
+                         max-width: 70ch;
+                    }
+
+                    div.buttons{
+                        display: flex;
+                        gap: 20px;
+                        
+                        :nth-child(1){
+                        color: var(--lightclay);
+                        background-color: var(--brown);
+                        }
+
+                        :nth-child(2){
+                        color: var(--brown);
+                        border-radius: 30px;
+                        border: var(--border);
+                        background-color: transparent;
+                        }
+
+                        button{
+                            padding: 15px;
+                            border-radius: 30px;
+                            border: var(--border);
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                div.right {
+                    background: var(--lightclay);
+                    padding: 50px 20px;
+                    font-size: 12px;
+                    border-radius: 15px;
+                    border: var(--border);
+                    line-height: 30px;
+                    width: clamp(300px, 40%, 600px);
+                   
+                    ul > li {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+
+        section.middle{
+            div.wrapper{
+                margin: auto;
+                width: 100%;
+                max-width: 1120px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+                div.why-attend{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    background-color: var(--lightclay);
+                    border: var(--border);
+                    border-radius: 15px;
+                    padding: 30px 20px;
+                    margin: auto;
+
+                    p.first-p{
+                        font-size: 12px;
+                        color: var(--brown);
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                    h3{
+                        font-size: 32px;
+                    }
+                    p.second-p{
+                       font-size: 16px;
+                       font-weight: 300; 
+                    }
+                }
+
+                div.goals{
+                    padding: 30px 20px;
+                    max-width: 1120px;
+                    width: 100%;
+                    border: var(--border);
+                    border-radius: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: var(--lightclay);
+                    margin: auto;
+                    gap: 15px;
+
+                    h3{ font-size: 24px; }
+
+                    div.small-goals-wrapper{
+                        display: flex; 
+                        width: 100%;
+                        justify-content: space-between;
+                        gap: 20px;
+
+                        div.goal-one,
+                        div.goal-two,
+                        div.goal-three {
+                            padding: 40px 20px;
+                            background-color: var(--darkclay);
+                            flex-grow: 1;
+                            border-radius: 10px;
+                            h3{ font-size: 32px; }
+                            p{ font-size: 12px; }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.bottom{
+            padding-bottom: 50px;
+            div.wrapper{
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                max-width: 1120px;
+                width: 100%;
+
+                div.tracks{
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                    
+                    &>p{
+                        text-transform: uppercase;
+                        color: var(--brown);
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                    &>h3{ font-size: 24px; }
+
+                    div.paths{
+                        display: flex;
+                        width: 100%;
+                        gap: 15px;
+                        
+                        h3{ font-size: 14px; }
+
+                        div.design-foundation,
+                        div.web-basics,
+                        div.career-readiness,
+                        div.team-collab {
+                            background-color: var(--lightclay);
+                            border: var(--border);
+                            border-radius: 15px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            padding: 40px 20px;
+                            flex-grow: 1;
+                            p{ font-size: 12px; }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ===== TABLET (max-width: 1024px) ===== */
+        @media screen and (max-width: 1024px) {
+
+            section.hero {
+                div.wrapper {
+                    div.right {
+                        width: clamp(200px, 40%, 500px);
+                    }
+                }
+            }
+
+            section.middle {
+                div.wrapper {
+                    padding: 0 20px;
+
+                    div.goals {
+                        div.small-goals-wrapper {
+                            gap: 15px;
+
+                            div.goal-one,
+                            div.goal-two,
+                            div.goal-three {
+                                padding: 25px 15px;
+                                h3 { font-size: 26px; }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.bottom {
+                div.wrapper {
+                    padding: 0 20px;
+
+                    div.tracks {
+                        div.paths {
+                            flex-wrap: wrap;
+
+                            div.design-foundation,
+                            div.web-basics,
+                            div.career-readiness,
+                            div.team-collab {
+                                flex: 1 1 calc(50% - 15px);
+                                min-width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ===== MOBILE (max-width: 768px) ===== */
+        @media screen and (max-width: 768px) {
+
+            main {
+                gap: 100px;
+                padding-top: 70px;
+            }
+
+            /* --- Hero --- */
+            section.hero {
+                div.wrapper {
+                    flex-direction: column;
+                    padding: 30px 20px;
+
+                    div.left {
+                        line-height: 30px;
+
+                        h1 { line-height: 40px; }
+
+                        div.buttons {
+                            flex-direction: column;
+                            gap: 10px;
+
+                            button { width: 100%; }
+                        }
+                    }
+
+                    div.right {
+                        width: 100%;
+                        min-width: unset;
+                        padding: 25px 15px;
+                    }
+                }
+            }
+
+            /* --- Middle --- */
+            section.middle {
+                div.wrapper {
+                    padding: 0 20px;
+
+                    div.why-attend {
+                        padding: 20px 15px;
+                        h3 { font-size: 22px; }
+                        p.second-p { font-size: 14px; }
+                    }
+
+                    div.goals {
+                        padding: 20px 15px;
+                        h3 { font-size: 20px; }
+
+                        div.small-goals-wrapper {
+                            flex-direction: column;
+
+                            div.goal-one,
+                            div.goal-two,
+                            div.goal-three {
+                                width: 100%;
+                                padding: 25px 15px;
+                                h3 { font-size: 26px; }
+                                p  { font-size: 13px; }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* --- Bottom --- */
+            section.bottom {
+                padding-bottom: 30px;
+
+                div.wrapper {
+                    padding: 0 20px;
+
+                    div.tracks {
+                        gap: 15px;
+
+                        &>h3 { font-size: 20px; }
+
+                        div.paths {
+                            flex-direction: column;
+
+                            div.design-foundation,
+                            div.web-basics,
+                            div.career-readiness,
+                            div.team-collab {
+                                width: 100%;
+                                padding: 25px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ===== MOBILE (max-width: 480px) ===== */
+        @media screen and (max-width: 480px) {
+
+            main { gap: 30px; }
+
+            section.middle {
+                div.wrapper {
+                    div.why-attend {
+                        h3 { font-size: 18px; }
+                        p.second-p { font-size: 13px; }
+                    }
+                    div.goals {
+                        h3 { font-size: 18px; }
+                        div.small-goals-wrapper {
+                            div.goal-one,
+                            div.goal-two,
+                            div.goal-three {
+                                h3 { font-size: 22px; }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.bottom {
+                div.wrapper {
+                    div.tracks {
+                        &>h3 { font-size: 18px; }
+                    }
+                }
+            }
+        }
+    }        
+}
