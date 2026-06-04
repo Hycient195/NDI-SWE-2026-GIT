@@ -1,12 +1,12 @@
 // QUESTION ONE
-const maskEmail = function theMask (email){
-    const visible = email.slice(0, 4);
-    const visible2 = email.slice(-10)
-    const asterixLength = (email.length -14);
-    return visible + "*".repeat(asterixLength) + visible2
-}
+const maskEmail = function theMask(email) {
+  const splitEmail = email.split("@");
+  const visible = splitEmail[0].slice(0, 4);
+  const asterixLength = splitEmail[0].length - 4;
 
-console.log(maskEmail("miesinteiosaisai@gmail.com"));
+  return visible + "*".repeat(asterixLength) + "@" + splitEmail[1];
+};
+console.log(maskEmail("amadi@gmail.com"));
 
 
 
