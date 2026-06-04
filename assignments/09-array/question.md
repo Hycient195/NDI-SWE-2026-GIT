@@ -23,3 +23,17 @@ input (array) -> output (object)
 Write a function that checks if a word is exactly the same when spelt forward and backwards
 
 sample: rever === rever -> true
+
+
+/* Read Up */
+
+Working with External Files and ES Modules
+Date, Time and DateTime,
+The Math() Class
+Promise and Asynchronous Javascript
+HTTP Requests
+
+JavaScript for Front-end
+Web Storate -> LocalStorage, and SessionStorage
+The DOM and DOM Manipulation
+Project! Project!! Project!!!

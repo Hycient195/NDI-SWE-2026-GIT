@@ -1,0 +1,10 @@
+{
+    "name": "James John",
+    "age": 25,
+    "isOnline": false,
+    "hobbies": ["Touring", "Vaccation"],
+    "address": {
+        "street": "123 Chi Drive",
+        "postalCode": 60001
+    } 
+}
