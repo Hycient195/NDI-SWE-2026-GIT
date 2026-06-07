@@ -52,3 +52,14 @@ console.log(countOccurrences);
 // At cycle 6 : acc = {2:1, 5:1, 7:1, 1:2}, curr = 9 -> {2:1, 5:1, 7:1, 1:2, 9:1}
 // At cycle 7 : acc = {2:1, 5:1, 7:1, 1:2, 9:1}, curr = 5 -> {2:1, 5:2, 7:1, 1:2, 9:1}
 
+
+// QUESTION THREE
+function isPalindrome(anyWord){
+    const reversed = anyWord.split("").reverse().join("");
+    return anyWord === reversed;
+}
+
+console.log(isPalindrome("Pop"));
+console.log(isPalindrome("nun"));
+console.log(isPalindrome("Mark"))
+
