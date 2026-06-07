@@ -55,7 +55,46 @@ function calculateCartTotal(cart) {
 
 console.log(calculateCartTotal(userCart)); 
 
+
 /* Question 2 */
+
+const numbers = [3, 5, 6, 7, 3, 4, 8, 3, 4];
+
+const countOccurrences = (arr) => {
+  const result = {};
+
+  arr.map((num) => {
+    if (result[num]) {
+      result[num]++;
+    } else {
+      result[num] = 1;
+    }
+  });
+
+  return result;
+};
+
+console.log(countOccurrences(numbers));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 At lifecycle 1: The function receives the word "rever".
 At lifecycle 2: The word is split into individual letters.
