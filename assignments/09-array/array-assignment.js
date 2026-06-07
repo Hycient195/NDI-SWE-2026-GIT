@@ -57,8 +57,9 @@ console.log(calculateCartTotal(userCart));
 
 
 /* Question 2 */
-
-const numbers = [3, 5, 6, 7, 3, 4, 8, 3, 4];
+/* At lifecycle 1: The function receives an array of numbers (arr) as input. */
+/* The function creates an empty object called result.
+This object will be used to store each number and the number of times it appears in the array. */
 
 const countOccurrences = (arr) => {
   const result = {};
