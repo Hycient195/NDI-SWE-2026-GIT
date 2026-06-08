@@ -86,12 +86,12 @@ console.log(countOccurrences(numbers));
 
 
 /*
-At lifecycle 1: The function receives the word "rever".
+At lifecycle 1: The function receives the word "never".
 At lifecycle 2: The word is split into individual letters.
 At lifecycle 3: The letters are reversed.
 At lifecycle 4: The reversed letters are joined back into a word.
-At lifecycle 5: The original word "rever" is compared with the reversed word "rever".
-At lifecycle 6: Since both are the same, the function returns true.
+At lifecycle 5: The original word "never" is compared with the reversed word "reven".
+At lifecycle 6: Since both are not the same, the function returns false.
 */
 
 function checkWord(word) {
@@ -99,5 +99,5 @@ function checkWord(word) {
     return word === reversedWord;
 }
 
-console.log(checkWord("never")); // true
-
+console.log(checkWord("never")); // false
+console.log(checkWord("rever")); // true
