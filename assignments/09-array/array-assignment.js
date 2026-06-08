@@ -58,8 +58,14 @@ console.log(calculateCartTotal(userCart));
 
 /* Question 2 */
 /* At lifecycle 1: The function receives an array of numbers (arr) as input. */
-/* The function creates an empty object called result.
+/* At lifecycle 2: The function creates an empty object called result.
 This object will be used to store each number and the number of times it appears in the array. */
+/* At lifecycle 3: The map() method iterates through each number in the array one at a time.
+The first number processed is: */
+/* At lifecycle 4: For each number, the function checks whether that number already exists as a key in the result object.*/
+/* At lifecycle 5: As each number is processed, its occurrence count is updated in the result object. */
+/* At lifecycle 6: After all numbers have been processed, the function returns the completed result
+ object containing each number and its total occurrence count. */
 
 const countOccurrences = (arr) => {
   const result = {};
@@ -79,23 +85,6 @@ console.log(countOccurrences(numbers));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 At lifecycle 1: The function receives the word "rever".
 At lifecycle 2: The word is split into individual letters.
@@ -110,5 +99,5 @@ function checkWord(word) {
     return word === reversedWord;
 }
 
-console.log(checkWord("rever")); // true
+console.log(checkWord("never")); // true
 
