@@ -100,4 +100,4 @@ function checkWord(word) {
 }
 
 console.log(checkWord("never")); // false
-console.log(checkWord("rever")); // true
+
