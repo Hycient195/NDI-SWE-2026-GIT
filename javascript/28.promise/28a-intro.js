@@ -9,7 +9,7 @@
 
     Pending -> I'm still at work and not back, I have neither fulfilled or not fulfilled my promise
 
-    Fulfilled | Resolve -> Get the fruit juice on my way back
+    Fulfilled | Resolve -> Got the fruit juice on my way back
 
     Rejected -> Did not get the fruit juice on my way back
 */

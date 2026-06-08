@@ -27,13 +27,16 @@ sample: rever === rever -> true
 
 /* Read Up */
 
-Working with External Files and ES Modules
-Date, Time and DateTime,
-The Math() Class
-Promise and Asynchronous Javascript
+* Working with External Files and ES Modules
+* Date, Time and DateTime,
+* The Math() Class
+* Promise and Asynchronous Javascript
+
 HTTP Requests
+Javascript Classes
 
 JavaScript for Front-end
 Web Storate -> LocalStorage, and SessionStorage
 The DOM and DOM Manipulation
+
 Project! Project!! Project!!!

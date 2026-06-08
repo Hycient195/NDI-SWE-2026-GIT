@@ -1,0 +1,22 @@
+const intro = require("./30a-intro")
+
+const { pi, add, multiply, modulus } = intro;
+
+// Calculate the area of a circle
+function areaOfCircle(r) {
+    return multiply(pi, multiply(r, r))
+}
+
+function circumferenceOfCircle(r) {
+    return multiply(2, multiply(pi, r))
+}
+
+function perimeterOfRectangle(l, b) {
+    return add(multiply(2, l), multiply(2, b))
+}
+
+console.log(areaOfCircle(4))
+console.log(circumferenceOfCircle(5))
+console.log(perimeterOfRectangle(4, 6))
+
+console.log(modulus(16, 5))
