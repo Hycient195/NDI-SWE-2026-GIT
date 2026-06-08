@@ -9,7 +9,7 @@ const myCart = [
 // const myCartBill = myCart.map(priQuan => {
 //     return priQuan.price * priQuan.quantity;
 // });
-const totalBill = myCart.reduce((acc, curr) => acc + curr.price* curr.quantity, 0);
+const totalBill = myCart.reduce((acc, curr) => acc + (curr.price* curr.quantity), 0);
 console.log("N" + totalBill ); 
 
 // At iteration 1 : acc = 0, curr = 3000(1500 * 2)  -> acc + curr -> 0 + 3000 -> 3000
@@ -55,8 +55,9 @@ console.log(countOccurrences);
 
 // QUESTION THREE
 function isPalindrome(anyWord){
-    const reversed = anyWord.split("").reverse().join("");
-    return anyWord === reversed;
+    const normalize = anyWord.toLowerCase()
+    const reversed = normalize.split("").reverse().join("");
+    return normalize === reversed;
 }
 
 console.log(isPalindrome("Pop"));
