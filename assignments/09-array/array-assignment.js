@@ -88,6 +88,7 @@ console.log(countOccurrences(numbers));
 
 
 /*
+Question 3
 At lifecycle 1: The function receives the word "never".
 At lifecycle 2: The word is split into individual letters.
 At lifecycle 3: The letters are reversed.
