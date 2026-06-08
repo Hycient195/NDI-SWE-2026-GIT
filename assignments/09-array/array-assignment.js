@@ -95,12 +95,10 @@ At lifecycle 6: Since both are not the same, the function returns false.
 */
 
 function checkWord(word) {
-    const normalizedWord = word.toLowerCase();
-    const reversedWord = normalizedWord.split('').reverse().join('');
-
-    return normalizedWord === reversedWord;
+    const reversedWord = word.split('').reverse().join('');
+    return word === reversedWord;
 }
 
-console.log(checkWord("ReVeR"));
+console.log(checkWord("never"));
 
 
