@@ -27,6 +27,8 @@ sample: rever === rever -> true
 */
 
 /*
+Question 1
+
 At lifecycle 1: The function receives an array of product objects (userCart).
 
 At lifecycle 2: The reduce() method initializes the accumulator (total) to 0.
