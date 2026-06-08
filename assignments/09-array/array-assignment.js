@@ -96,7 +96,7 @@ At lifecycle 6: Since both are not the same, the function returns false.
 
 function checkWord(word) {
     const reversedWord = word.split('').reverse().join('');
-    return word === reversedWord;
+    return word !== reversedWord;
 }
 
 console.log(checkWord("never")); // false
