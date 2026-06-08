@@ -6,3 +6,4 @@ function isWordReverse(word) {
 
 console.log(isWordReverse("level")); 
 console.log(isWordReverse("hello")); 
+console.log(isWordReverse("madam"))
