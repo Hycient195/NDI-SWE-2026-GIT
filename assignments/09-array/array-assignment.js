@@ -41,8 +41,8 @@ At lifecycle 5: The calculated item cost is added to the running total.
 
 At lifecycle 6: After all items have been processed, the function returns the final total cost of the cart.
 
-
 */
+
 const userCart = [
   { itemName: "Power Bank", price: 1000, quantity: 7 },
   { itemName: "Phone", price: 5000, quantity: 3 },
@@ -69,7 +69,9 @@ The first number processed is: */
 /* At lifecycle 6: After all numbers have been processed, the function returns the completed result
  object containing each number and its total occurrence count. */
 
-const countOccurrences = (arr) => {
+const numbers = [3, 5, 6, 7, 3, 4, 8, 3, 4];
+
+const countOccurrencies = (arr) => {
   const result = {};
 
   arr.map((num) => {
@@ -83,7 +85,7 @@ const countOccurrences = (arr) => {
   return result;
 };
 
-console.log(countOccurrences(numbers));
+console.log(countOccurrencies(numbers));
 
 
 
