@@ -32,11 +32,11 @@ sample: rever === rever -> true
 * The Math() Class
 * Promise and Asynchronous Javascript
 
-HTTP Requests
+* HTTP Requests
 Javascript Classes
 
 JavaScript for Front-end
-Web Storate -> LocalStorage, and SessionStorage
 The DOM and DOM Manipulation
+Web Storage -> LocalStorage, and SessionStorage
 
 Project! Project!! Project!!!
