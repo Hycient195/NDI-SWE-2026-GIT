@@ -1,9 +1,11 @@
 function isWordReverse(word) {
-    let reversedWord = word.split("").reverse().join("");
 
-    return word === reversedWord;
+    let lowerWord = word.toLowerCase()
+    let reversedWord = lowerWord.split("").reverse().join("");
+
+    return lowerWord === reversedWord;
 }
 
 console.log(isWordReverse("level")); 
 console.log(isWordReverse("hello")); 
-console.log(isWordReverse("madam"))
+console.log(isWordReverse("Madam"))
