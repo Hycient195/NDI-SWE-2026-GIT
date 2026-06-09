@@ -25,7 +25,7 @@ the min and max numbers, with both min and max being in the range of the numbers
  
 const rand = Math.random(); // return a decimal random number btw 0 and 1
 
-function anyNumber(min, max) {
+function aRandomNumber(min, max) {
     // check if min is > max value, if yes, swap their values using array destructuring
     if (min > max) {
         [min, max] = [max, min]
@@ -34,4 +34,4 @@ function anyNumber(min, max) {
     return Math.floor(rand * (max - min + 1)) + min;
 }
 // output
-console.log(anyNumber(2, 10));
+console.log(aRandomNumber(2, 10));
