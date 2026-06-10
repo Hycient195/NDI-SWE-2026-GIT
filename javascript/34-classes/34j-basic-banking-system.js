@@ -17,9 +17,14 @@ class BankAccount {
     }
 
     deposit(amount) {
-        if (amount < 0) throw new Error("Cannot deposit negative amount")
-        this.#_balance += amount
-        console.log(`Amount ${amount} deposited`);
+        try {
+            if (amount < 0) throw new Error("Cannot deposit negative amount")
+            this.#_balance += amount
+            console.log(`Amount ${amount} deposited`);
+        } catch (error) {
+            console.log(err)
+        }
+        
     }
 
     withdraw(owner, amount) {

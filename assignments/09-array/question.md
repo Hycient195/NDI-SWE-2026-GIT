@@ -33,7 +33,7 @@ sample: rever === rever -> true
 * Promise and Asynchronous Javascript
 
 * HTTP Requests
-Javascript Classes
+* Javascript Classes
 
 JavaScript for Front-end
 The DOM and DOM Manipulation
