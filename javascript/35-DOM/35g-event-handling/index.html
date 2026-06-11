@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <script src="./script.js" defer></script>
+    <style>
+        div.outer, div.outer > div {
+            padding: 5px 10px;
+            display: flex;
+            appearance: none;
+            border: 1px solid black;
+            width: max-content;
+        }
+        form > fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+        }
+        fieldset.simple-todo {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            & > div {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr max-content;
+
+                & input {
+                    max-width: unset;
+                    width: 100%;
+                    padding: 6px 8px;
+                    font-size: 16px;
+                }
+            }
+
+            & > ol {
+                /* list-style-type: none; */
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="title">Event Handling</h1>
+
+        <button class="change-text">Change Title Text</button>
+
+        <br>
+
+        <button class="alert-btn">Alert Me!</button>
+
+        <button class="event-obj">Event Object</button>
+
+        <div class="outer">
+            Outer Button
+            <div class="inner">Inner Button</div>
+        </div>
+
+        <ul class="number-list">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+
+        <input class="input-text" type="text">
+
+
+        <form class="simple-form" action="">
+            <fieldset>
+                <legend>User Details</legend>
+                <input class="title" type="text">
+                <textarea class="body"></textarea>
+                <button type="submit">Submit Form</button>
+            </fieldset>
+        </form>
+
+        <ul class="dynamic-render"></ul>
+
+        <fieldset class="simple-todo">
+            <legend>Simple Todo</legend>
+            <div class="">
+                <input class="todo-input" type="text">
+                <button class="todo-add-item">Add Item</button>
+            </div>
+            <ol class="todo-items"></ol>
+        </fieldset>
+    </main>
+</body>
+</html>
