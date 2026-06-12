@@ -35,8 +35,8 @@ sample: rever === rever -> true
 * HTTP Requests
 * Javascript Classes
 
-JavaScript for Front-end
-The DOM and DOM Manipulation
+* JavaScript for Front-end
+* The DOM and DOM Manipulation
 Web Storage -> LocalStorage, and SessionStorage
 
 Project! Project!! Project!!!

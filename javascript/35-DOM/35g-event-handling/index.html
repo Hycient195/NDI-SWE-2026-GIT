@@ -19,7 +19,7 @@
             gap: 10px;
             max-width: 500px;
         }
-        fieldset.simple-todo {
+        fieldset.simple-todo, fieldset.intermediate-todo {
             max-width: 400px;
             display: flex;
             flex-direction: column;
@@ -42,6 +42,43 @@
                 /* list-style-type: none; */
                 padding-left: 20px;
             }
+        }
+
+        div.users {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            border: 1px solid black;
+
+            & > div {
+                border: 1px solid gray;
+                padding: 10px 16px;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                gap: 10px;
+                align-items: center;
+
+                & > div:nth-child(1) {
+                    border-radius: 50%;
+                    height: 50px;
+                    background-color: silver;
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    text-align: center;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        div.counter-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border: 1px solid black;
+            width: max-content;
+            padding: 30px;
         }
     </style>
 </head>
@@ -91,6 +128,34 @@
             </div>
             <ol class="todo-items"></ol>
         </fieldset>
+
+        <hr>
+
+        <fieldset class="intermediate-todo">
+            <legend>Simple Todo</legend>
+            <div class="">
+                <input class="intermediate-todo-input" type="text">
+                <button class="intermediate-todo-add-item">Add Item</button>
+            </div>
+            <ol class="intermediate-todo-items"></ol>
+        </fieldset>
+
+        <button class="fetch-users">Fetch Users</button>
+        <div class="users">
+
+        </div>
+
+        <hr>
+
+        <section class="">
+            <h2>Event Attribute</h2>
+            <div class="counter-container">
+                <button onclick="handleDecrease()" class="decrease">Decrease</button>
+                <h2 class="counter">0</h2>
+                <button onclick="handleIncrease()" increase>Increase</button>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>

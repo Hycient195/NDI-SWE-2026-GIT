@@ -191,3 +191,105 @@ addItemButton.addEventListener("click", () => {
 
     todoInput.value = ""
 })
+
+
+
+/* =========================================== */
+/* ============ Intermediate Todo ============ */
+/* =========================================== */
+const intermediateTodoInput = document.querySelector(".intermediate-todo-input");
+const intermediateAddItemButton = document.querySelector(".intermediate-todo-add-item");
+const intermediateTodoItems = document.querySelector(".intermediate-todo-items");
+
+const items = [];
+
+intermediateAddItemButton.addEventListener("click", () => {
+
+    // Adding text obtained from input, into the items array
+    items.push(intermediateTodoInput.value);
+
+    // Clearing out input element in preparation for the next input
+    intermediateTodoInput.value = "";
+
+    // Taking the items in the array and updating the DOM
+    renderItems()
+})
+
+function renderItems() {
+    // Clearing ur ul element to receive a fresh set of li children element
+    intermediateTodoItems.innerHTML = "";
+
+    // Looping thruogh all items in the array
+    items.forEach((item, index) => {
+
+        // Creating an element, each for every item in the array
+        const itemElement = document.createElement("li");
+
+        // Injecting HTML element content into the newly created element created above
+        // And assigning a delete function to the delete button of each displayed item
+        itemElement.innerHTML = `
+        <strong>${item}</strong>
+        <button onclick="deleteItem(${index})">Delete</button>
+        `
+
+        // Appending each of the created "li" elements to the "ul" parent
+        intermediateTodoItems.append(itemElement)
+    })
+}
+
+function deleteItem(index) {
+    // Using the splice method to remove the item with index provided, from the items array
+    items.splice(index, 1)
+
+    // Taking the items in the array and updating the DOM
+    renderItems()
+}
+
+
+
+/* ===================================================== */
+/* ============ Rendering API Response Data ============ */
+/* ===================================================== */
+const fetchButton = document.querySelector(".fetch-users");
+const userList = document.querySelector(".users");
+
+fetchButton.addEventListener("click", async () => {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+        const data = await response.json();
+
+        data.forEach((item) => {
+            const element = document.createElement("div");
+
+            element.innerHTML = `
+            <div><div>${item?.name?.[0]}</div></div>
+            <div>
+                <div>${item?.name}</div>
+                <div>${item?.email}</div>
+            </div>
+            `
+            userList.append(element)
+        })
+
+        console.log(data)
+    } catch (error) {
+        alert(`Error fetching users ${error.message}`)
+    }
+})
+
+
+/* =============================================== */
+/* ============ Using Event Attribute ============ */
+/* =============================================== */
+const counter = document.querySelector(".counter");
+
+let counterValue = 0;
+
+const handleIncrease = () => {
+    counter.textContent = counterValue++
+}
+
+const handleDecrease = () => {
+    counter.textContent = counterValue--
+}
